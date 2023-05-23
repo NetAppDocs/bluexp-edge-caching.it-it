@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: fixed-issues.html 
+keywords: fixed issues, release notes, fixes, gfc, global file cache 
+summary: Scopri quali problemi sono stati risolti nel caching edge di BlueXP. 
+---
+= Risolti i problemi di caching edge BlueXP
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Scopri quali problemi sono stati risolti nel caching edge di BlueXP.
+
+
+
+== 27 marzo 2023 (versione 2.2)
+
+* Risolto un problema di conversione del formato temporale dell'esecuzione di un processo di pre-popolamento per l'opzione "ora ultima modifica".
+* Risolto un problema relativo all'analisi del trasferimento di file e al passaggio al servizio Cloud Insights.
+* Edge Sync dei file tra tutti gli abbonati viene riconnessa automaticamente quando si verifica una disconnessione con l'editore.
+* È stata corretta l'esecuzione dei processi di pre-popolamento su un edge se collegato a più core.
+* L'interfaccia utente di Optimus ora mostra l'elenco Connected Edge su un editore che partecipa alla funzionalità Edge Sync.
+
+
+
+
+== 24 ottobre 2022 (versione 2.1)
+
+* Durante la configurazione della licenza viene eseguita un'ulteriore convalida del numero di abbonamento GFC.
+* GFC ha aggiunto il supporto per estendere la licenza per una durata specifica per le licenze basate su Zuora. Contattare il supporto GFC.
+* Aggiunto un ritardo di 15 secondi prima di scrivere un minidump dopo un crash. Aggiunto anche un timer per monitorare il minidump e uscire forzatamente dal processo se il dump non viene completato in 60 secondi. Questi piccoli miglioramenti contribuiranno a migliorare l'analisi.
+* Rimossa la propagazione delle informazioni di trasferimento dei singoli file in Cloud Insights, ma aggiunta la propagazione delle informazioni di riepilogo di trasferimento dei file in Cloud Insights. In questo modo si riduce l'enorme carico su ci.
+* Acquisizione fissa di dati e metadati in Cloud Insights. Ciò consente la visualizzazione dei dati ci.
+* È stato risolto il problema di blocco dell'interfaccia utente di Optimus Configuration facendo clic sul pulsante "Registring instance to ci" (registrazione istanza su ci).
+* Risolto un problema a causa del quale il monitor Tservice viene lasciato manuale durante la configurazione iniziale.
+* Sono stati corretti bug minori nel servizio client GFC ci Agent.
+
+
+
+
+== 25 luglio 2022 (versione 2.0)
+
+* Optimus viene migliorato aggiungendo limiti di delimitazione ai parametri di data/ora per la configurazione di aggiunta di job pre-popolamento.
+* Optimus PSM ora mostra i dettagli corretti della CPU nei dettagli di pre-richiesta del sistema.
+* È stata corretta un'eccezione nell'interfaccia utente durante la configurazione di Edge Sync tra l'immissione dei dettagli del coordinatore e il clic sul pulsante Refresh (Aggiorna).
+* L'interfaccia utente di Optimus è stata migliorata per abilitare/disabilitare la funzione Edge Sync sull'edge.
+* Risolto il problema relativo all'intervallo di date in License Server Manager per Zuora License Aggregator.
+* È stato corretto il PSM di Optimus per mostrare le informazioni sul numero di leasing.
+* Correzione della logica del License Management Server sull'updater di configurazione durante un aggiornamento.
+
+
+
+
+== 23 giugno 2022 (versione 1.3.1)
+
+* Al momento dell'aggiornamento, la versione corretta di Microsoft Redistributable non viene installata correttamente e di conseguenza Tum non si avvia. Il programma di installazione di GFC è stato corretto per installare la versione corretta ridistribuibile.
+* GFC License Manager Service (LMS) aggiorna ora le informazioni di configurazione, invece di sovrascriverle.
+* L'interfaccia utente di configurazione viene ora associata alla System.net.http dll corretta durante il processo di aggiornamento.
+
+
+
+
+== 19 maggio 2022 (versione 1.3.0)
+
+* La pagina dell'interfaccia utente di configurazione per la funzionalità Edge Sync viene aggiornata.
+* Risolto un problema relativo all'aggiunta di job di pre-popolamento per più bordi contemporaneamente tramite cmdlet PowerShell.
+* Risolto un problema di visualizzazione nell'interfaccia utente Web LMS che visualizza l'abbonamento NetApp.
+* Lo script PowerShell per la configurazione LMS utilizza ora TLS 1.2.
+* Risolto un problema in TappN (servizio pre-popolamento) e che gli consentiva di continuare l'esecuzione del processo, nonostante disconnessioni temporanee o riavvii di Tum.
+* Il servizio di prepopolamento TappN viene aggiornato per ignorare il recupero dei file se lo spazio libero nella cache scende al di sotto del valore di soglia inferiore.
+* È stato risolto un problema nel Servizio server Manager di licenza (LMS) durante la scrittura di un registro di traccia.
+* L'infrastruttura di registrazione per Tum viene aggiornata per essere più scalabile e con performance elevate.
+
+
+
+
+== 17 dicembre 2021 (versione 1.2.0)
+
+* L'interfaccia utente di configurazione (Optimus) è stata migliorata per convalidare le voci del campo della data e aggiungere i job di pre-popolamento.
+* Il pre-popolamento è stato migliorato per monitorare l'utilizzo della cache e non viene popolato se l'utilizzo della cache raggiunge i parametri di cleaning della cache.
+* Rimossa la dipendenza del servizio LMS (License Management Server) eseguito localmente con la configurazione dei criteri.
+* Il driver del kernel GFC è stato migliorato per evitare un crash nel servizio SMB Server in Windows Server 2016/2019.
+* Correzione di un'eccezione nel servizio LMS.
+* I tipi di avvio del servizio per il Servizio server Manager di licenza (LMS), il Servizio client Manager di licenza (LMC) e il Servizio prepopolato (TappN) vengono modificati da "Automatic Delayed" (automatico ritardato) a "Automatic" (automatico).
+

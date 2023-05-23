@@ -1,0 +1,195 @@
+---
+sidebar: sidebar 
+permalink: task-gfc-getting-started.html 
+keywords: global file cache, core, management server 
+summary: 'Si utilizza BlueXP per implementare il software BlueXP edge caching Management Server e Core nell"ambiente di lavoro.' 
+---
+= Per iniziare
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Si utilizza BlueXP per implementare il software BlueXP edge caching Management Server e Core nell'ambiente di lavoro.
+
+
+
+== Abilitare il caching edge BlueXP utilizzando BlueXP
+
+In questa configurazione verranno implementati il server di gestione del caching edge BlueXP e il core di caching edge BlueXP nello stesso ambiente di lavoro in cui è stato creato il sistema Cloud Volumes ONTAP utilizzando BlueXP.
+
+Guarda link:https://www.youtube.com/watch?v=TGIQVssr43A["questo video"^] per visualizzare i passaggi dall'inizio alla fine.
+
+
+
+=== Avvio rapido
+
+Inizia subito seguendo questi passaggi o scorri verso il basso fino alle sezioni rimanenti per ottenere informazioni complete:
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["Uno"] Implementare Cloud Volumes ONTAP
+[role="quick-margin-para"]
+Implementare Cloud Volumes ONTAP e configurare le condivisioni di file SMB. Per ulteriori informazioni, vedere https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancio di Cloud Volumes ONTAP in Azure"^], https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Avvio di Cloud Volumes ONTAP in AWS"^], o. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lancio di Cloud Volumes ONTAP in Google Cloud"^].
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["Due"] Implementare il server di gestione del caching edge BlueXP
+[role="quick-margin-para"]
+Distribuire un'istanza del server di gestione del caching edge BlueXP nello stesso ambiente di lavoro dell'istanza di Cloud Volumes ONTAP.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["Tre"] Implementare il core di caching edge BlueXP
+[role="quick-margin-para"]
+Distribuire una o più istanze del core di caching edge BlueXP nello stesso ambiente di lavoro dell'istanza di Cloud Volumes ONTAP e unirsi al dominio Active Directory.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["Quattro"] Licenza BlueXP edge caching
+[role="quick-margin-para"]
+Configurare il servizio LMS (License Management Server) di caching edge BlueXP su un'istanza Core di caching edge BlueXP. Per attivare l'abbonamento, è necessario disporre delle credenziali NSS o di un ID cliente e di un numero di abbonamento forniti da NetApp.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["Cinque"] Implementare le istanze di BlueXP edge caching Edge
+[role="quick-margin-para"]
+Vedere link:task-deploy-gfc-edge-instances.html["Implementazione di istanze edge caching di BlueXP Edge"^] Per implementare le istanze di BlueXP edge caching Edge in ogni posizione remota. Questo passaggio non viene eseguito con BlueXP.
+
+
+
+=== Implementa Cloud Volumes ONTAP come piattaforma di storage
+
+BlueXP edge caching supporta Cloud Volumes ONTAP implementati in Azure, AWS e Google Cloud. Per informazioni dettagliate su prerequisiti, requisiti e istruzioni di implementazione, vedere https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Lancio di Cloud Volumes ONTAP in Azure"^], https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["Avvio di Cloud Volumes ONTAP in AWS"^], o. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html["Lancio di Cloud Volumes ONTAP in Google Cloud"^]
+
+Tenere presente il seguente requisito aggiuntivo di caching edge BlueXP:
+
+* È necessario configurare le condivisioni di file SMB sull'istanza di Cloud Volumes ONTAP.
++
+Se non sono state impostate condivisioni di file SMB sull'istanza, viene richiesto di configurare le condivisioni SMB durante l'installazione dei componenti di caching edge di BlueXP.
+
+
+
+
+
+=== Abilita il caching edge BlueXP nel tuo ambiente di lavoro
+
+L'installazione guidata illustra i passaggi per implementare l'istanza di BlueXP edge caching Management Server e l'istanza di BlueXP edge caching Core, come evidenziato di seguito.
+
+image:screenshot_gfc_install1.png["Una schermata della pagina iniziale di installazione del caching edge BlueXP."]
+
+.Fasi
+. Selezionare l'ambiente di lavoro in cui è stato implementato Cloud Volumes ONTAP.
+. Nel pannello servizi, fare clic su *Enable* per il servizio _Edge caching_.
++
+image:screenshot_gfc_install2.png["Una schermata del pulsante Enable iniziale nell'ambiente di lavoro per abilitare il caching edge BlueXP."]
+
+. Leggi la pagina Panoramica e fai clic su *continua*.
+. Se non sono disponibili condivisioni SMB nell'istanza di Cloud Volumes ONTAP, viene richiesto di inserire i dettagli relativi al server SMB e alla condivisione SMB per creare la condivisione. Per ulteriori informazioni sulla configurazione SMB, vedere link:concept-before-you-begin-to-deploy-gfc.html#storage-platform-volumes["Piattaforma di storage"^].
++
+Al termine, fare clic su *continua* per creare la condivisione SMB.
+
++
+image:screenshot_gfc_install3.png["Una schermata che mostra le informazioni necessarie per creare una condivisione SMB, se non disponibile."]
+
+. Nella pagina Global file cache Service, immettere il numero di istanze Global file cache Edge che si desidera implementare, quindi assicurarsi che il sistema soddisfi i requisiti per le regole di configurazione di rete e firewall, le impostazioni di Active Directory e le esclusioni antivirus. Vedere link:concept-before-you-begin-to-deploy-gfc.html#prerequisites["Prerequisiti"] per ulteriori dettagli.
++
+image:screenshot_gfc_install4.png["Una schermata che mostra i prerequisiti prima di implementare le istanze di BlueXP edge caching Management Server e Core."]
+
+. Dopo aver verificato che i requisiti sono stati soddisfatti o che si dispone delle informazioni necessarie per soddisfare tali requisiti, fare clic su *continua*.
+. Immettere le credenziali di amministratore da utilizzare per accedere alla VM di BlueXP edge caching Management Server e fare clic su *Enable GFC Service* (attiva servizio GFC). Per Azure e Google Cloud inserisci le credenziali come nome utente e password; per AWS seleziona la coppia di chiavi appropriata. Se si desidera, è possibile modificare il nome della macchina virtuale/istanza.
++
+image:screenshot_gfc_install5.png["Una schermata che mostra le informazioni di configurazione necessarie per configurare il server di gestione del caching edge BlueXP."]
+
+. Una volta implementato il servizio di gestione del caching edge BlueXP, fare clic su *continua*.
+. Per BlueXP edge caching Core, immettere le credenziali dell'utente admin per accedere al dominio Active Directory e le credenziali dell'utente dell'account di servizio. Quindi fare clic su *continua*.
++
+** L'istanza principale di caching edge BlueXP deve essere implementata nello stesso dominio Active Directory dell'istanza di Cloud Volumes ONTAP.
+** L'account di servizio è un utente di dominio e fa parte del gruppo BUILTIN/Backup Operators sull'istanza di Cloud Volumes ONTAP.
++
+image:screenshot_gfc_install6.png["Una schermata che mostra le informazioni di configurazione necessarie per impostare l'account di servizio e directory attiva di BlueXP edge caching Core."]
+
+
+
+. Immettere le credenziali di amministratore da utilizzare per accedere alla core VM BlueXP edge caching e fare clic su *Deploy GFC Core*. Per Azure e Google Cloud inserisci le credenziali come nome utente e password; per AWS seleziona la coppia di chiavi appropriata. Se si desidera, è possibile modificare il nome della macchina virtuale/istanza.
++
+image:screenshot_gfc_install7.png["Una schermata che mostra le informazioni di configurazione necessarie per impostare l'istanza di BlueXP edge caching Core."]
+
+. Una volta implementato il core di caching edge BlueXP, fare clic su *Vai alla dashboard*.
++
+image:screenshot_gfc_install8.png["Una schermata che mostra la dashboard di caching edge di BlueXP al termine dell'installazione."]
+
+
+
+La dashboard mostra che l'istanza di Management Server e l'istanza di Core sono entrambe *ON* e funzionanti.
+
+
+
+=== Concedere in licenza l'installazione di BlueXP edge caching
+
+Prima di poter utilizzare il caching edge BlueXP, è necessario configurare il servizio Server di gestione delle licenze (LMS) per il caching edge BlueXP su un'istanza Core per il caching edge BlueXP. Per attivare l'abbonamento, è necessario disporre delle credenziali NSS o di un ID cliente e di un numero di abbonamento forniti da NetApp.
+
+In questo esempio, configureremo il servizio LMS su un'istanza Core appena implementata nel cloud pubblico. Si tratta di un processo unico che consente di configurare il servizio LMS.
+
+.Fasi
+. Aprire la pagina Global file cache License Registration (registrazione licenza cache globale file) sul core di caching edge BlueXP (il core che si sta designando come servizio LMS) utilizzando il seguente URL. Sostituire _<ip_address>_ con l'indirizzo IP del core di caching edge BlueXP:https://<ip_address>/lms/api/v1/config/lmsconfig.html[]
+. Fare clic su *"continua con questo sito Web (non consigliato)"* per continuare. Viene visualizzata una pagina che consente di configurare l'LMS o di controllare le informazioni di licenza esistenti.
++
+image:screenshot_gfc_license1.png["Una schermata della pagina BlueXP edge caching License Registration."]
+
+. Scegliere la modalità di registrazione:
++
+** "NetApp LMS" viene utilizzato per i clienti che hanno acquistato licenze NetApp BlueXP edge caching Edge da NetApp o dai suoi partner certificati. (Preferito)
+** "Legacy LMS" viene utilizzato per i clienti esistenti o in prova che hanno ricevuto un ID cliente tramite il supporto NetApp. (Questa opzione è stata obsoleta).
+
+
+. Per questo esempio, fare clic su *NetApp LMS*, inserire l'ID cliente (preferibilmente l'indirizzo e-mail) e fare clic su *Registra LMS*.
++
+image:screenshot_gfc_license2.png["Una schermata che mostra l'inserimento di un ID cliente LMS on-premise nella pagina BlueXP edge caching License Registration."]
+
+. Controlla l'e-mail di conferma di NetApp che include il numero di abbonamento al software GFC e il numero di serie.
++
+image:screenshot_gfc_license_email.png["Una schermata dell'e-mail di NetApp contenente il numero di abbonamento al software GFC."]
+
+. Fare clic sulla scheda *NetApp LMS Settings* (Impostazioni LMS NetApp).
+. Selezionare *GFC License Subscription*, inserire il numero di abbonamento al software GFC e fare clic su *Submit* (Invia).
++
+image:screenshot_gfc_license_subscription.png["Una schermata che mostra l'inserimento del numero di abbonamento al software GFC nella pagina GFC License Subscription (abbonamento alle licenze GFC)."]
+
++
+Viene visualizzato un messaggio che indica che l'abbonamento di licenza GFC è stato registrato e attivato correttamente per l'istanza LMS. Eventuali acquisti successivi verranno aggiunti automaticamente all'abbonamento di licenza GFC.
+
+. In alternativa, è possibile fare clic sulla scheda *License Information* (informazioni licenza) per visualizzare tutte le informazioni sulla licenza GFC.
+
+
+.Quali sono le prossime novità?
+Se si è stabilito che è necessario implementare più core di caching edge BlueXP per supportare la configurazione, fare clic su *Add Core Instance* (Aggiungi istanza principale) dal dashboard e seguire la procedura guidata di distribuzione.
+
+Una volta completata l'implementazione Core, è necessario link:download-gfc-resources.html["Implementare le istanze di BlueXP edge caching Edge"^] in ogni sede remota.
+
+
+
+== Implementare istanze core aggiuntive
+
+Se la configurazione richiede l'installazione di più di un core di caching edge BlueXP a causa di un elevato numero di istanze Edge, è possibile aggiungere un altro core all'ambiente di lavoro.
+
+Durante l'implementazione delle istanze Edge, alcune verranno configurate per la connessione al primo core e altre al secondo core. Entrambe le istanze principali accedono allo stesso storage back-end (l'istanza di Cloud Volumes ONTAP) nell'ambiente di lavoro.
+
+. Dalla dashboard Global file cache, fare clic su *Add Core Instance* (Aggiungi istanza principale).
++
+image:screenshot_gfc_add_another_core.png["Una schermata della dashboard GFC e il pulsante per aggiungere un'istanza Core aggiuntiva."]
+
+. Immettere le credenziali dell'utente amministratore per accedere al dominio Active Directory e le credenziali dell'utente dell'account di servizio. Quindi fare clic su *continua*.
++
+** L'istanza principale di caching edge BlueXP deve trovarsi nello stesso dominio Active Directory dell'istanza di Cloud Volumes ONTAP.
+** L'account di servizio è un utente di dominio e fa parte del gruppo BUILTIN/Backup Operators sull'istanza di Cloud Volumes ONTAP.
++
+image:screenshot_gfc_install6.png["Una schermata che mostra le informazioni di configurazione necessarie per impostare l'account di servizio e directory attiva di BlueXP edge caching Core."]
+
+
+
+. Immettere le credenziali di amministratore da utilizzare per accedere alla core VM BlueXP edge caching e fare clic su *Deploy GFC Core*. Per Azure e Google Cloud inserisci le credenziali come nome utente e password; per AWS seleziona la coppia di chiavi appropriata. Se si desidera, è possibile modificare il nome della macchina virtuale.
++
+image:screenshot_gfc_install7.png["Una schermata che mostra le informazioni di configurazione necessarie per impostare l'istanza di BlueXP edge caching Core."]
+
+. Una volta implementato il core di caching edge BlueXP, fare clic su *Vai alla dashboard*.
++
+image:screenshot_gfc_dashboard_2cores.png["Una schermata che mostra la dashboard di caching edge di BlueXP al termine dell'installazione."]
+
+
+
+La dashboard riflette la seconda istanza Core per l'ambiente di lavoro.
