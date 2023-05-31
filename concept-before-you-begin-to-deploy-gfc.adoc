@@ -89,7 +89,7 @@ Se non è stata impostata almeno una condivisione file SMB sull'istanza di Cloud
 * Il nome e le dimensioni del volume che si desidera creare, il nome dell'aggregato su cui verrà creato il volume e il nome della condivisione.
 
 
-Si consiglia di utilizzare un volume sufficientemente grande per ospitare il set di dati totale dell'applicazione, oltre alla possibilità di scalare di conseguenza in base alla crescita del set di dati. Se nell'ambiente di lavoro sono presenti più aggregati, vedere https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-aggregates.html["Gestione degli aggregati esistenti"^] per determinare quale aggregato dispone dello spazio più disponibile per il nuovo volume.
+Si consiglia di utilizzare un volume sufficientemente grande per ospitare il set di dati totale dell'applicazione, oltre alla possibilità di scalare di conseguenza in base alla crescita del set di dati. Se nell'ambiente di lavoro sono presenti più aggregati, vedere https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-aggregates.html["Gestione degli aggregati esistenti"^] per determinare quale aggregato dispone dello spazio più disponibile per il nuovo volume.
 
 
 

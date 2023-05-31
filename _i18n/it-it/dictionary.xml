@@ -98,7 +98,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">Open source</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">I file di avviso forniscono informazioni sul copyright e sulle licenze di terze parti utilizzate nel software NetApp.</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">Avviso per BlueXP</block>
-  <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="30bb4b461ad4d4983b375b0396ce9268" category="inline-link-macro">Avviso per il caching edge BlueXP</block>
   <block id="70047fd54a8a62c8cd3c66b7b6da87a3" category="list-text"><block ref="70047fd54a8a62c8cd3c66b7b6da87a3" category="inline-link-macro-rx"></block></block>
   <block id="55be43fdae1edd255f27ede47e8019f9" category="summary">Prima di iniziare a implementare il caching edge BlueXP nel cloud e nelle sedi remote, è necessario conoscere molti requisiti.</block>
@@ -132,7 +131,6 @@
   <block id="981640f9fb09fe09a937c7da955d9dfb" category="list-text">Nome di dominio di Active Directory, indirizzo IP del server dei nomi, credenziali di amministratore di Active Directory.</block>
   <block id="794cb058ebafe2e7b0df56dea2e389d4" category="list-text">Il nome e le dimensioni del volume che si desidera creare, il nome dell'aggregato su cui verrà creato il volume e il nome della condivisione.</block>
   <block id="5a546cf8c7438d3947e0f034bfe5f5af" category="inline-link">Gestione degli aggregati esistenti</block>
-  <block id="03120f4ae41820e46fabced95a93dbb5" category="paragraph">Si consiglia di utilizzare un volume sufficientemente grande per ospitare il set di dati totale dell'applicazione, oltre alla possibilità di scalare di conseguenza in base alla crescita del set di dati. Se nell'ambiente di lavoro sono presenti più aggregati, vedere<block ref="acc2071beb330a8d456d30e0940aedbc" category="inline-link-rx"></block> per determinare quale aggregato dispone dello spazio più disponibile per il nuovo volume.</block>
   <block id="7f029c22b741c6d3b353b27390e3d40e" category="section-title">Server di gestione del caching edge BlueXP</block>
   <block id="ff55b337eded596e10485f141012c055" category="paragraph">Il server di gestione del caching edge BlueXP richiede l'accesso esterno su HTTPS (porta TCP 443) per connettersi al servizio di abbonamento del provider cloud e per accedere ai seguenti URL:</block>
   <block id="ca8b4d0fc39e2135cbcdf391be62059b" category="list-text">https://gfcproxyforcm-prod.azurewebsites.net/</block>
@@ -181,11 +179,8 @@
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">Supporto per le soluzioni cloud provider</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">Per il supporto tecnico sulle seguenti soluzioni di cloud provider integrate in BlueXP, fare riferimento alla sezione "Assistenza" nella documentazione BlueXP relativa a tale prodotto.</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">Amazon FSX per ONTAP</block>
-  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files</block>
-  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service per Google Cloud</block>
-  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">Panoramica sulla registrazione del supporto</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">Esistono due forme di registrazione per attivare i diritti di supporto:</block>
   <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">Registrazione dell'abbonamento al supporto per l'ID account BlueXP (il numero di serie a 20 cifre 960xxxxxxxxx nella pagina Support Resources di BlueXP).</block>
@@ -208,7 +203,6 @@
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Se disponi di un account partner o reseller, puoi aggiungere uno o più account NSS, ma non possono essere aggiunti insieme agli account a livello di cliente.</block>
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">Nella parte superiore destra della console BlueXP, fare clic sull'icona Guida e selezionare *supporto*.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata</block>
-  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">Fare clic su *Gestione NSS &gt; Aggiungi account NSS*.</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">Quando richiesto, fare clic su *Continue* per essere reindirizzati a una pagina di accesso Microsoft.</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.</block>
@@ -221,8 +215,6 @@
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">Lo stesso vale se si dispone di account NSS a livello di cliente preesistenti e si tenta di aggiungere un account a livello di partner.</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">Una volta effettuato l'accesso, NetApp memorizzerà il nome utente NSS.</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">Un'icona di tre punti orizzontali</block>
-  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">Si tratta di un ID generato dal sistema che viene mappato all'e-mail. Nella pagina *NSS Management*, è possibile visualizzare l'e-mail da <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu.</block>
-  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">Se è necessario aggiornare i token delle credenziali di accesso, è disponibile anche l'opzione *Update Credentials* (Aggiorna credenziali) in <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> menu.</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">Questa opzione richiede di effettuare nuovamente l'accesso. Il token per questi account scade dopo 90 giorni. Verrà inviata una notifica per avvisare l'utente.</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">Registrati con NetApp</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">La modalità di registrazione al supporto NetApp dipende dal fatto che si disponga già di un account NetApp Support Site (NSS).</block>
@@ -231,7 +223,6 @@
   <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">Se non l'hai ancora fatto, Aggiungi il tuo account NSS a BlueXP.</block>
   <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">Nella pagina *risorse*, fare clic su *Registra per il supporto*.</block>
   <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">Una schermata che mostra il numero di serie di un account e l'opzione Registra per il supporto</block>
-  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">Cliente esistente ma nessun account NSS</block>
   <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">Se sei già un cliente NetApp con licenze e numeri di serie esistenti ma _no_ account NSS, devi solo creare un account NSS.</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">Modulo di registrazione per l'utente del sito di supporto NetApp</block>
@@ -241,7 +232,6 @@
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">Novità di NetApp</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">Se sei nuovo di NetApp e non disponi di un account NSS, segui i passaggi riportati di seguito.</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">Individuare il numero di serie dell'ID account nella pagina Support Registration (registrazione supporto).</block>
-  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">Sito per la registrazione del supporto NetApp</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">Selezionare<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> E selezionare *non sono un cliente NetApp registrato*.</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">Compilare i campi obbligatori (con asterischi rossi).</block>
@@ -267,7 +257,6 @@
   <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">Lancio di Cloud Volumes ONTAP in Azure</block>
   <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">Avvio di Cloud Volumes ONTAP in AWS</block>
   <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">Lancio di Cloud Volumes ONTAP in Google Cloud</block>
-  <block id="2b73cde380b325cb0d7cd3d8076023ae" category="paragraph">Implementare Cloud Volumes ONTAP e configurare le condivisioni di file SMB. Per ulteriori informazioni, vedere<block ref="e515c0e95325e358a799acebafdf6235" category="inline-link-rx"></block>,<block ref="497bfdbba9caf2f6a6f7d799eda40dc3" category="inline-link-rx"></block>, o.<block ref="f61ed94059894a24c9302a926017e32c" category="inline-link-rx"></block>.</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">Due</block>
   <block id="47a36c5a10f1475734cf25053e80cf30" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> Implementare il server di gestione del caching edge BlueXP</block>
   <block id="b1b6c2fd33beb079cbc593f3d52ddf73" category="paragraph">Distribuire un'istanza del server di gestione del caching edge BlueXP nello stesso ambiente di lavoro dell'istanza di Cloud Volumes ONTAP.</block>
@@ -282,7 +271,6 @@
   <block id="a3478e6d52ae4f0ad63d093777515615" category="inline-link-macro">Implementazione di istanze edge caching di BlueXP Edge</block>
   <block id="72618ee12aaa89a8ff8190e4cfaebf76" category="paragraph">Vedere <block ref="8a8be2ad52d9aa8bdc89d7f5ec8c59df" category="inline-link-macro-rx"></block> Per implementare le istanze di BlueXP edge caching Edge in ogni posizione remota. Questo passaggio non viene eseguito con BlueXP.</block>
   <block id="7be40d2cd621549d68e8fff4ffead179" category="section-title">Implementa Cloud Volumes ONTAP come piattaforma di storage</block>
-  <block id="3919b01d29c5218479fcbb29fbcdf267" category="paragraph">BlueXP edge caching supporta Cloud Volumes ONTAP implementati in Azure, AWS e Google Cloud. Per informazioni dettagliate su prerequisiti, requisiti e istruzioni di implementazione, vedere<block ref="e515c0e95325e358a799acebafdf6235" category="inline-link-rx"></block>,<block ref="497bfdbba9caf2f6a6f7d799eda40dc3" category="inline-link-rx"></block>, o.<block ref="f61ed94059894a24c9302a926017e32c" category="inline-link-rx"></block></block>
   <block id="370b94610a07d4acffd09200c2a83123" category="paragraph">Tenere presente il seguente requisito aggiuntivo di caching edge BlueXP:</block>
   <block id="d0b9898fe413c415608114643e2b6efc" category="list-text">È necessario configurare le condivisioni di file SMB sull'istanza di Cloud Volumes ONTAP.</block>
   <block id="7c91a8c26657bad5dc6f80e7c67c912e" category="paragraph">Se non sono state impostate condivisioni di file SMB sull'istanza, viene richiesto di configurare le condivisioni SMB durante l'installazione dei componenti di caching edge di BlueXP.</block>
@@ -593,7 +581,6 @@
   <block id="6962e9afd3ce89facea38f30c619211e" category="list-text">Quando viene installato con Cloud Volumes ONTAP (le configurazioni supportate sono implementate completamente tramite BlueXP), sono disponibili due opzioni di prezzo:</block>
   <block id="07fb1269841f7291dfbea77bd07f01c9" category="list-text">Per i sistemi Cloud Volumes ONTAP, è possibile pagare 3,000 dollari per ogni istanza edge caching di BlueXP, all'anno.</block>
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">Scopri di più qui</block>
-  <block id="79cfd0467a2c3cce9c27dc88c6f2b9c2" category="list-text">In alternativa, per i sistemi Cloud Volumes ONTAP in Azure e GCP, è possibile scegliere il pacchetto Cloud Volumes ONTAP cache edge. Questa licenza basata sulla capacità consente di implementare una singola istanza di BlueXP edge caching Edge Edge per ogni 3 TIB di capacità acquistata.<block ref="60136c2b0ea733a67f6c719e0fbaea2e" category="inline-link-rx"></block>.</block>
   <block id="d2893970aa4c57a02af5ca132a872653" category="inline-link">Calcola il tuo potenziale di risparmio</block>
   <block id="7d78fe64ccb6332f6ee84a1d7a54e2cd" category="list-text">Se installato utilizzando le opzioni di implementazione manuale, il prezzo è diverso. Per una stima dei costi di alto livello, vedere<block ref="9302a3a91184fdbf4c3bfe67365aaae4" category="inline-link-rx"></block> In alternativa, rivolgiti al tuo NetApp Solutions Engineer per discutere delle opzioni migliori per l'implementazione aziendale.</block>
   <block id="54ec0cdb19cb605eacd486e1e3eae2e4" category="paragraph">BlueXP edge caching include un License Management Server (LMS) basato su software, che consente di consolidare la gestione delle licenze e distribuire le licenze a tutte le istanze Core ed Edge utilizzando un meccanismo automatizzato.</block>
@@ -611,14 +598,11 @@
   <block id="e0feab0ee26165da9cddab198d1f1422" category="section-title">5 aprile 2023 (versione 2.2)</block>
   <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">Problemi risolti</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link">questa pagina</block>
-  <block id="6ad27e169d4768e9a46a134513c55556" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>. I pacchetti software aggiornati sono disponibili all'indirizzo<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>.</block>
   <block id="b1bdb4b30cdf01fdd4fc306c24b3e449" category="section-title">Supporto per Global file cache su sistemi Cloud Volumes ONTAP implementati in Google Cloud</block>
   <block id="a92c52030822934c670502facf8a8f31" category="paragraph">Una nuova licenza "Edge cache" è disponibile quando si implementa un sistema Cloud Volumes ONTAP in Google Cloud. Hai diritto a implementare un sistema edge Global file cache per ogni 3 TIB di capacità acquistata sul sistema Cloud Volumes ONTAP.</block>
   <block id="6a749e3d1bafd02cdf9a303ba6375e66" category="inline-link">Scopri di più sul pacchetto di licenza Edge cache.</block>
-  <block id="3a8f1f533494279acf2d044c11cf495a" category="paragraph"><block ref="3a8f1f533494279acf2d044c11cf495a" category="inline-link-rx"></block></block>
   <block id="89960279d43d6d504afb45e5a8dff137" category="section-title">La configurazione guidata e l'interfaccia utente di configurazione GFC sono state migliorate per eseguire la registrazione della licenza NetApp</block>
   <block id="402a1502f5c39fb55ca79d59e3184a34" category="section-title">Optimus PSM ottimizzato per configurare la funzionalità Edge Sync</block>
-  <block id="19df80e08f82de8a5a9df23c1e7c6b96" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>.</block>
   <block id="51d465a61bb0f252b570a31acdf628be" category="section-title">Global file cache è ora disponibile con un numero qualsiasi di licenze</block>
   <block id="c4579941f945f9c013bc5d2b34483751" category="paragraph">Il precedente requisito minimo di 10 licenze, o 30 TB di storage, è stato rimosso. Verrà rilasciata una licenza Global file cache per ogni 3 TB di storage.</block>
   <block id="a05df94e25a3fdf3c6809915be7db21b" category="section-title">È stato aggiunto il supporto per l'utilizzo di un server di gestione delle licenze offline</block>
@@ -629,7 +613,6 @@
   <block id="3bf86cee85be3992be11d6813b4f6b14" category="section-title">È stata migliorata la funzione Edge Sync nell'interfaccia utente di Optimus (configurazione Edge) per mostrare tutti i client connessi</block>
   <block id="40ede24da7e93db6d61cd94c084008e7" category="section-title">Nuovo modello di licenza basato sulla capacità per Global file cache attraverso Azure Marketplace</block>
   <block id="70dc5565ba7814d08bd68476e5fb76ff" category="paragraph">Una nuova licenza "Edge cache" ha le stesse funzionalità della licenza "CVO Professional", ma include anche il supporto per Global file cache. Questa opzione viene visualizzata quando si implementa un nuovo sistema Cloud Volumes ONTAP in Azure. Hai diritto a implementare un sistema edge Global file cache per ogni 3 TIB di capacità fornita sul sistema Cloud Volumes ONTAP. È necessario eseguire il provisioning di un minimo di 30 TIB. Il servizio GFC License Manager è stato migliorato per fornire licenze basate sulla capacità.</block>
-  <block id="0d8fd49fcb5c25122324fcb59637aff8" category="paragraph"><block ref="0d8fd49fcb5c25122324fcb59637aff8" category="inline-link-rx"></block></block>
   <block id="b7b58b4424e766ec66e0ab4ea9c812b8" category="section-title">Global file cache è ora integrato con Cloud Insights</block>
   <block id="cf7c224c7b8d702f6384270dadb22ca0" category="paragraph">NetApp Cloud Insights (ci) offre una visibilità completa dell'infrastruttura e delle applicazioni. Global file cache è ora integrato con ci per fornire una visibilità completa di tutti i core e i margini, monitorando i processi in esecuzione sulle istanze. Varie metriche Global file cache vengono inviate al ci per fornire una panoramica completa sul dashboard ci. Vedere il capitolo 11 della<block ref="2cde0a8e9bca45f9b9d7b53c9b2941a5" category="inline-link-rx"></block></block>
   <block id="902eaec7802b7e6292febf1b6526a6b5" category="inline-link">Scopri di più su Cloud Insights.</block>
@@ -637,8 +620,6 @@
   <block id="1f56bc157b53331171e2209738abd411" category="section-title">License Management Server è stato migliorato per funzionare in ambienti molto restrittivi</block>
   <block id="706163f56e3d19088d2a54cd0451269e" category="paragraph">Durante la configurazione della licenza, il License Management Server (LMS) deve avere accesso a Internet per raccogliere i dettagli della licenza da NetApp/Zuora. Una volta completata la configurazione, il sistema LMS può continuare a lavorare in modalità offline e fornire funzionalità di licenza anche se si trova in ambienti restrittivi.</block>
   <block id="1b66d26240c6a01df03ec7dc4a6d1a2b" category="section-title">L'interfaccia utente di Edge Sync in Optimus è stata migliorata per mostrare l'elenco dei client connessi su un Edge coordinatore</block>
-  <block id="2991218cb9240c85cc1b72c630327e36" category="paragraph">Questa versione risolve i problemi descritti in<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>.</block>
-  <block id="538b3d7be12bcc1f18433981df773bc1" category="paragraph">Il software Global file cache Edge per la versione 1.3.0 è disponibile all'indirizzo<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>.</block>
   <block id="9463b6d7b9d38e544c6a7eb98988bb3b" category="section-title">Nuova funzionalità Metadata Edge Sync</block>
   <block id="2e0922ffb3ae1ae6ac16997e734d5154" category="paragraph">Questa funzione "Metadata Edge Sync" utilizza la funzionalità di sincronizzazione Edge come framework principale. Solo le informazioni sui metadati vengono aggiornate su tutti gli edge sottoscritti e i file/cartelle vengono creati sui computer Edge.</block>
   <block id="2273c570a2dcacbb1c4bb77abccca54b" category="section-title">Miglioramenti del servizio License Manager</block>
@@ -693,7 +674,6 @@
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*Allegato (opzionale)*: Carica fino a cinque allegati, uno alla volta.</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Gli allegati sono limitati a 25 MB per file. Sono supportate le seguenti estensioni di file: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx e csv.</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Schermata del modulo Crea un caso che consente di creare un caso con il supporto NetApp.</block>
-  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Viene visualizzata una finestra a comparsa con il numero del caso di supporto. Uno specialista del supporto NetApp esaminerà il tuo caso e ti contatterà al più presto.</block>
   <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">Per una cronologia dei casi di supporto, fare clic su *Impostazioni &gt; Cronologia* e cercare le azioni denominate "Crea caso di supporto". Un pulsante all'estrema destra consente di espandere l'azione per visualizzare i dettagli.</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">È possibile che venga visualizzato il seguente messaggio di errore quando si tenta di creare un caso:</block>
@@ -717,21 +697,15 @@
   <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">In *Organization's Cases* (casi dell'organizzazione), fare clic su *View* (Visualizza) per visualizzare tutti i casi associati alla società.</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">Modificare l'intervallo di date scegliendo un intervallo di date esatto o scegliendo un intervallo di tempo diverso.</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Una schermata dell'opzione sopra la tabella nella pagina di gestione del caso che consente di scegliere un intervallo di date esatto o gli ultimi 7 giorni, 30 giorni o 3 mesi.</block>
-  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrare il contenuto delle colonne.</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">Schermata dell'opzione di filtro nella colonna Status (Stato) che consente di filtrare i casi che corrispondono a uno stato specifico, ad esempio attivo o chiuso.</block>
-  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">L'icona più visualizzata nella tabella</block>
-  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">Modificare le colonne visualizzate nella tabella facendo clic su <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> e quindi scegliere le colonne che si desidera visualizzare.</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">Una schermata che mostra le colonne che è possibile visualizzare nella tabella.</block>
-  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Un'icona con tre punti che compare nell'ultima colonna della tabella</block>
-  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">Gestire un caso esistente facendo clic su <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> e selezionando una delle opzioni disponibili:</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Visualizza caso*: Visualizza tutti i dettagli relativi a un caso specifico.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Aggiorna note sul caso*: Fornisci ulteriori dettagli sul problema oppure seleziona *carica file* per allegare fino a un massimo di cinque file.</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Chiudi caso*: Fornisci i dettagli sul motivo per cui stai chiudendo il caso e fai clic su *Chiudi caso*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Una schermata che mostra le azioni che è possibile eseguire dopo aver selezionato il menu nell'ultima colonna della tabella.</block>
-  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="54b9b1f5c21bdf70595c700a22577ed0" category="sidebar">Documenti per il caching edge BlueXP</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Note di rilascio</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">Novità</block>
@@ -755,4 +729,30 @@
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Altre risorse</block>
   <block id="f79eca534d02cb718a61576ea3936648" category="sidebar">Casi di utilizzo di BlueXP Edge Caching</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Tutta la documentazione BlueXP</block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="91ea063dfcaf2cbae3a931cc1d0a28a8" category="paragraph">Si consiglia di utilizzare un volume sufficientemente grande per ospitare il set di dati totale dell'applicazione, oltre alla possibilità di scalare di conseguenza in base alla crescita del set di dati. Se nell'ambiente di lavoro sono presenti più aggregati, vedere<block ref="89800d58631629b790a13a9de7981f0e" category="inline-link-rx"></block> per determinare quale aggregato dispone dello spazio più disponibile per il nuovo volume.</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">Si tratta di un ID generato dal sistema che viene mappato all'e-mail. Nella pagina *NSS Management*, è possibile visualizzare l'e-mail da <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">Se è necessario aggiornare i token delle credenziali di accesso, è disponibile anche l'opzione *Update Credentials* (Aggiorna credenziali) in <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> menu.</block>
+  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="278930628a6575fa0fe23ecd27374bfb" category="paragraph">Implementare Cloud Volumes ONTAP e configurare le condivisioni di file SMB. Per ulteriori informazioni, vedere<block ref="8198e799bf373d0d471ff3f551725308" category="inline-link-rx"></block>,<block ref="3718aa4b740ed1680c17ac188cf71498" category="inline-link-rx"></block>, o.<block ref="958eb36238d0859ba89677740ca359aa" category="inline-link-rx"></block>.</block>
+  <block id="b48c78d3da26a7311e5288a66ed4f4d8" category="paragraph">BlueXP edge caching supporta Cloud Volumes ONTAP implementati in Azure, AWS e Google Cloud. Per informazioni dettagliate su prerequisiti, requisiti e istruzioni di implementazione, vedere<block ref="8198e799bf373d0d471ff3f551725308" category="inline-link-rx"></block>,<block ref="3718aa4b740ed1680c17ac188cf71498" category="inline-link-rx"></block>, o.<block ref="958eb36238d0859ba89677740ca359aa" category="inline-link-rx"></block></block>
+  <block id="45456d22bd7241b79d0f62620d5888d8" category="list-text">In alternativa, per i sistemi Cloud Volumes ONTAP in Azure e GCP, è possibile scegliere il pacchetto Cloud Volumes ONTAP cache edge. Questa licenza basata sulla capacità consente di implementare una singola istanza di BlueXP edge caching Edge Edge per ogni 3 TIB di capacità acquistata.<block ref="2ad67afc7a67ecb4970c40ef2d9c9dc1" category="inline-link-rx"></block>.</block>
+  <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. I pacchetti software aggiornati sono disponibili all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
+  <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
+  <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
+  <block id="f5f78956220294d550567ec883fe45c6" category="paragraph"><block ref="f5f78956220294d550567ec883fe45c6" category="inline-link-rx"></block></block>
+  <block id="2466aaf1d1f57cfbe736e835f936a857" category="paragraph">Questa versione risolve i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
+  <block id="83a5e35b6b359abe6f4e440efbdffd38" category="paragraph">Il software Global file cache Edge per la versione 1.3.0 è disponibile all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">Modificare le colonne visualizzate nella tabella facendo clic su <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> e quindi scegliere le colonne che si desidera visualizzare.</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">Gestire un caso esistente facendo clic su <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> e selezionando una delle opzioni disponibili:</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
