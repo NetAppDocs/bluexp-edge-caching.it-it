@@ -2,22 +2,22 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>cloud-manager-file-cache | NetApp Documentation</title>
-    <atom:link href="https://docs.netapp.com/it-it/cloud-manager-file-cache/feed.xml" rel="self" type="application/rss+xml"/>
-    <link>https://docs.netapp.com/it-it/cloud-manager-file-cache</link>
+    <title>bluexp-edge-caching | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/it-it/bluexp-edge-caching/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/it-it/bluexp-edge-caching</link>
     <description>The latest updates from NetApp Documentation</description>
     <language>it-it</language>
     <ttl>60</ttl>
-    <pubDate>Wed, 24 May 2023 08:38:18 +0000</pubDate>
-    <lastBuildDate>Wed, 24 May 2023 08:38:18 +0000</lastBuildDate>
+    <pubDate>Wed, 31 May 2023 14:51:16 +0000</pubDate>
+    <lastBuildDate>Wed, 31 May 2023 14:51:16 +0000</lastBuildDate>
     
     
     
     <item>
-      <title>Novità del caching edge BlueXP (23 May 2023)</title>
-      <pubDate>Tue, 23 May 2023 21:21:38 +0000</pubDate>
-      <link>https://docs.netapp.com/it-it/cloud-manager-file-cache/whats-new.html?time=1684876898</link>
-      <guid isPermaLink="false">Tue, 23 May 2023 21:21:38 +0000</guid>
+      <title>Novità del caching edge BlueXP (31 May 2023)</title>
+      <pubDate>Wed, 31 May 2023 14:48:07 +0000</pubDate>
+      <link>https://docs.netapp.com/it-it/bluexp-edge-caching/whats-new.html?time=1685544487</link>
+      <guid isPermaLink="false">Wed, 31 May 2023 14:48:07 +0000</guid>
       <description><![CDATA[ Scopri le novità del caching edge BlueXP. ]]></description>
     </item>
     
