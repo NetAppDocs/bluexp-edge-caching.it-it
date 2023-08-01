@@ -30,4 +30,4 @@ link:media/Global_File_Cache_Onboarding_Email.msg["Modello e-mail Windows (.msg)
 * Comunicazioni di assunzionelink:https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%20Customer%20Onboarding%20-%20Draft.docx["Documento Word (.docx)"]
 
 
-Vedere il capitolo 14 della https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.2.0%20User%20Guide.pdf["Guida utente di NetApp Global file cache"^] per materiale aggiuntivo.
+Fare riferimento al Capitolo 14 nella https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf["Guida utente di NetApp Global file cache"^] per materiale aggiuntivo.

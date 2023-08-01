@@ -65,7 +65,6 @@
   <block id="749c0e89c28cfa8efa0ef88d80e309b9" category="list-text">Al termine dell'installazione, riavviare il server quando richiesto.</block>
   <block id="e66cf0363da426ff5fc40b5dff923ee7" category="paragraph-title">Quali sono le prossime novità?</block>
   <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">Guida utente di NetApp Global file cache</block>
-  <block id="8b2ab5f7a66955724c809328b3ba02c7" category="paragraph">Per ulteriori informazioni sulla configurazione avanzata di Global file cache Edge, consultare<block ref="16f037677ba4ac06616103e429c60f34" category="inline-link-rx"></block>.</block>
   <block id="0359b57232c61c0f8f60b5c0c7753467" category="summary">Utilizza i seguenti link per saperne di più sul caching edge BlueXP e su altri prodotti NetApp.</block>
   <block id="0f68b904e33d9ac04605aecc958bcf52" category="doc">Ulteriori informazioni</block>
   <block id="6b2532f4dcf1077dcd23e885d518ed1a" category="paragraph">Utilizza i seguenti link per saperne di più sul caching edge BlueXP e su altri prodotti NetApp:</block>
@@ -73,7 +72,6 @@
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">qui</block>
   <block id="8ecccfdcd4be3957ff4226f7ebc7a1a7" category="list-text">Consulta un elenco di domande e risposte frequenti<block ref="fc2092b82edf81356eaedffaf3f1bee1" category="inline-link-rx"></block></block>
   <block id="d64a82ae72c0eea94e9d0109ce9f0e05" category="inline-link">Guida utente Global file cache</block>
-  <block id="71048020ca8f58e44ec25370f4129cbc" category="list-text"><block ref="71048020ca8f58e44ec25370f4129cbc" category="inline-link-rx"></block></block>
   <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="list-text">Documentazione sui prodotti NetApp</block>
   <block id="1b28ae1c9b0f1461cf0ea5fa195be216" category="list-text">Consultare la documentazione aggiuntiva per i prodotti cloud NetApp<block ref="0510c3621321be434699160c80a14647" category="inline-link-rx"></block></block>
   <block id="b7d4822080efa7a461a554d7acc5efc3" category="list-text">Consultare la documentazione aggiuntiva per tutti i prodotti NetApp<block ref="9a789bf5bdb0e5a09882dca7f00da4c4" category="inline-link-rx"></block></block>
@@ -187,10 +185,7 @@
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">Questi numeri seriali sono comunemente denominati _numeri seriali PAYGO_ e vengono generati da BlueXP al momento dell'implementazione di Cloud Volumes ONTAP.</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">Se disponi di un account a livello di cliente, puoi aggiungere uno o più account NSS.</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">Se disponi di un account partner o reseller, puoi aggiungere uno o più account NSS, ma non possono essere aggiunti insieme agli account a livello di cliente.</block>
-  <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">Nella parte superiore destra della console BlueXP, fare clic sull'icona Guida e selezionare *supporto*.</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">Schermata del menu Help (Guida) in cui Support (Assistenza) è la prima opzione elencata</block>
-  <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">Fare clic su *Gestione NSS &gt; Aggiungi account NSS*.</block>
-  <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">Quando richiesto, fare clic su *Continue* per essere reindirizzati a una pagina di accesso Microsoft.</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp utilizza Microsoft Azure Active Directory come provider di identità per i servizi di autenticazione specifici per il supporto e la concessione di licenze.</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">Nella pagina di accesso, fornire l'indirizzo e-mail e la password registrati del NetApp Support Site per eseguire il processo di autenticazione.</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">Queste azioni consentono a BlueXP di utilizzare il tuo account NSS per download di licenze, verifica dell'aggiornamento software e registrazioni di supporto future.</block>
@@ -361,13 +356,6 @@
   <block id="3e97d9d5f3ba2c244689f2b32f79b026" category="list-text">Il servizio di prepopolamento TappN viene aggiornato per ignorare il recupero dei file se lo spazio libero nella cache scende al di sotto del valore di soglia inferiore.</block>
   <block id="91bd85b0510e37378b14fab4ad5a4129" category="list-text">È stato risolto un problema nel Servizio server Manager di licenza (LMS) durante la scrittura di un registro di traccia.</block>
   <block id="c2a4e35926866a1322a751f57a7f847a" category="list-text">L'infrastruttura di registrazione per Tum viene aggiornata per essere più scalabile e con performance elevate.</block>
-  <block id="df62d5ca9c29346bfeb41f9581ecdf5b" category="section-title">17 dicembre 2021 (versione 1.2.0)</block>
-  <block id="dc7104ff29582271cbda56277263eec5" category="list-text">L'interfaccia utente di configurazione (Optimus) è stata migliorata per convalidare le voci del campo della data e aggiungere i job di pre-popolamento.</block>
-  <block id="65c0ed4b8ed88949fa21fa5a60be6ddb" category="list-text">Il pre-popolamento è stato migliorato per monitorare l'utilizzo della cache e non viene popolato se l'utilizzo della cache raggiunge i parametri di cleaning della cache.</block>
-  <block id="f74032e7a801122d16bdf48f04518b8a" category="list-text">Rimossa la dipendenza del servizio LMS (License Management Server) eseguito localmente con la configurazione dei criteri.</block>
-  <block id="1835c27cfc517067592779b50d13190c" category="list-text">Il driver del kernel GFC è stato migliorato per evitare un crash nel servizio SMB Server in Windows Server 2016/2019.</block>
-  <block id="5876df88731069c35bfd4f3ea17e7db0" category="list-text">Correzione di un'eccezione nel servizio LMS.</block>
-  <block id="959915525ca7f68401340816fbc38d13" category="list-text">I tipi di avvio del servizio per il Servizio server Manager di licenza (LMS), il Servizio client Manager di licenza (LMC) e il Servizio prepopolato (TappN) vengono modificati da "Automatic Delayed" (automatico ritardato) a "Automatic" (automatico).</block>
   <block id="841c1c7434f34d02643d009e13a8566c" category="summary">Prima di iniziare a installare il software BlueXP edge caching Edge nelle sedi remote, è necessario conoscere molti requisiti.</block>
   <block id="0e746721cb7975a7f711d0c0c110a187" category="doc">Prima di iniziare a implementare le istanze di BlueXP edge caching Edge</block>
   <block id="7a285bcce3684231f2e0a4bb8ac77616" category="section-title">Scaricare le risorse richieste</block>
@@ -375,23 +363,15 @@
   <block id="17fcbeb5f192793fd41f089a59730538" category="list-text">Modello virtuale di Windows Server 2016:</block>
   <block id="7cfa172f8a8d357df3a2106ac8c6b398" category="inline-link">Windows Server 2016 .OVA con NetApp GFC (VMware vSphere 6.5+)</block>
   <block id="835e49a2c436ab4a585d71025b4cc7fa" category="inline-link">Windows Server 2016 .VHDX con NetApp GFC (Microsoft Hyper-v)</block>
-  <block id="d0d546da16d9832ff46d61dc5ef26932" category="paragraph"><block ref="3a81a4f05e21aa91091722261afd5aaf" category="inline-link-rx"></block>
-<block ref="27773895991caccde32f6e33c69fec61" category="inline-link-rx"></block></block>
   <block id="7eeb858e6d60489627b61144a4b897b9" category="list-text">Modello virtuale di Windows Server 2019:</block>
   <block id="02e6ddd105b75a46cfcba50b442be725" category="inline-link">Windows Server 2019 .OVA con NetApp GFC (VMware vSphere 6.5+)</block>
   <block id="135435a8d8eb3533e52dfec2d082e667" category="inline-link">Windows Server 2019 .VHDX con NetApp GFC (Microsoft Hyper-v)</block>
-  <block id="a9d760d85bb88dc8163208d766f23ca4" category="paragraph"><block ref="c63479f0fbc3dbee0fb764d414be40d7" category="inline-link-rx"></block>
-<block ref="3ec6d5c1525af8f42b563a3c3ab31adf" category="inline-link-rx"></block></block>
-  <block id="d7cc1aba59ec6af15e3dcb99efd2c63b" category="list-text">Software BlueXP edge caching Edge:</block>
   <block id="faf7d644098124d7a6915b6cc59a0988" category="inline-link">Pacchetto di installazione del software NetApp GFC (.EXE)</block>
-  <block id="363f1ad303ff20d0b886e3a63a56597e" category="paragraph"><block ref="363f1ad303ff20d0b886e3a63a56597e" category="inline-link-rx"></block></block>
   <block id="a82f8775c45fb832c573ea5925281014" category="list-text">Dashboard Global file cache per Cloud Insights:</block>
   <block id="79970e54ed0f206381160ddc9c16ebfb" category="inline-link">Dashboard NetApp GFC Cloud Insights (.ZIP)</block>
   <block id="161bce40034252bf3bd18e8b63136e82" category="paragraph"><block ref="161bce40034252bf3bd18e8b63136e82" category="inline-link-rx"></block></block>
   <block id="e2d416ed29232c19a683a619f4500452" category="list-text">Documentazione Global file cache:</block>
   <block id="5ce7f81a8ae145f3b72b93e3696353d9" category="inline-link">Guida utente di NetApp Global file cache (.PDF)</block>
-  <block id="5151bb6c17edd826d3b324de615dcc4c" category="paragraph"><block ref="5151bb6c17edd826d3b324de615dcc4c" category="inline-link-rx"></block></block>
-  <block id="a484f2579f9294abcb73c22bbb7acba2" category="paragraph">Link:task-deploy-gfc-edge-instances.html update-bluexp-edge caching-edge-software[Segui questi passaggi] per aggiornare il software BlueXP edge caching Edge.</block>
   <block id="e761081d91a7bf50b6ca9cbb78f77c77" category="admonition">Quando si implementa il caching edge BlueXP su Windows Server 2016, è necessario utilizzare .NET Framework 4.8 e Windows WebView2 Framework.</block>
   <block id="3f3b788ab9693618f52b194ad5887b67" category="section-title">Progettazione e implementazione di BlueXP edge caching Edge</block>
   <block id="4786b59c1c0d62cd8a5441020ac73455" category="paragraph">A seconda dei requisiti, potrebbe essere necessario implementare una o più istanze Edge in base alle sessioni utente simultanee in una filiale. L'istanza Edge presenta la condivisione di file virtuale agli utenti finali all'interno della filiale, che è stata estesa in modo trasparente dall'istanza BlueXP edge caching Core associata. BlueXP edge caching Edge deve contenere un<block ref="b40b366b86664ec1c37b5e3e11120931" prefix=" " category="inline-code"></block> Volume NTFS, che contiene i file memorizzati nella cache all'interno della filiale.</block>
@@ -437,7 +417,6 @@
   <block id="e48ab3024cfcf431a14c3003435bfd56" category="paragraph">*La dimensione minima è il doppio del set di dati attivo. Il volume cache (D:) può essere esteso ed è limitato solo dalle limitazioni del file system NTFS di Microsoft Windows.</block>
   <block id="c05b754004fbd4130eae9e62448598e2" category="section-title">Requisiti del disco Global file cache Intelligent file cache</block>
   <block id="85b5f3c25b56d8971fb15ba1b85c9098" category="paragraph">La latenza del disco sul disco Global file cache Intelligent file cache (D:) deve garantire una latenza media dei dischi i/o inferiore a 0,5 ms e un throughput di 1 MiBps per utente simultaneo.</block>
-  <block id="7c3c8fffbe87f176330b29a1b26ca517" category="paragraph">Per ulteriori informazioni, consultare<block ref="16f037677ba4ac06616103e429c60f34" category="inline-link-rx"></block>.</block>
   <block id="48dff7378dd65ac24895becaad42bc8a" category="list-text">Firewall: Le porte TCP devono essere consentite tra le istanze di BlueXP edge caching Edge e Management Server e Core.</block>
   <block id="5f4f1623091a8d84351d360fc47dd8c3" category="paragraph">Porte TCP per caching edge BlueXP: 443 (HTTPS - LMS), 6618 - 6630.</block>
   <block id="1fbc431dee8a6b3b664020a773591201" category="section-title">Best practice per workstation client e applicazioni</block>
@@ -446,7 +425,6 @@
   <block id="35bd173c5c09760e27239213b562c7a2" category="paragraph">Per garantire un'esperienza e performance ottimali, è importante rispettare i requisiti e le Best practice del client Microsoft Windows, come descritto nella Global file cache User Guide. Questo vale per tutte le versioni di Microsoft Windows.</block>
   <block id="a0d1fd507848b71fc407746a94f31ef3" category="section-title">Best practice per firewall e antivirus</block>
   <block id="f2bf4f5e837cbb53c709329da16d1010" category="paragraph">Sebbene il caching edge BlueXP faccia un ragionevole sforzo per verificare che le suite di applicazioni antivirus più comuni siano compatibili con Global file cache, NetApp non può garantire e non è responsabile di eventuali incompatibilità o problemi di performance causati da questi programmi o dai relativi aggiornamenti, service pack o modifiche.</block>
-  <block id="cc592f796ca659bb3bcfb4607c16e589" category="paragraph">NetApp sconsiglia l'installazione o l'applicazione di soluzioni antivirus o di monitoraggio su qualsiasi istanza abilitata per il caching edge BlueXP (Core o Edge). Nel caso in cui una soluzione venga installata, a scelta o in base a policy, è necessario applicare le seguenti Best practice e raccomandazioni. Per le suite antivirus più comuni, consultare l'Appendice A nella<block ref="16f037677ba4ac06616103e429c60f34" category="inline-link-rx"></block>.</block>
   <block id="1d8d6b8f9abcab53172954c91e5d8de9" category="section-title">Impostazioni del firewall</block>
   <block id="cd476ae4644da8d9986293ca4ccec11c" category="list-text">Firewall Microsoft:</block>
   <block id="74d0be744832a30201de162b50221ae7" category="list-text">Mantenere le impostazioni predefinite del firewall.</block>
@@ -457,7 +435,6 @@
   <block id="7dbb84ed55ace7eec6e2f7552615cb52" category="list-text">Le istanze di caching edge BlueXP richiedono comunicazioni con il server di gestione del caching edge BlueXP sulla porta TCP 443 (HTTPS).</block>
   <block id="d4dae6ebb0e75f20eec6013ee1cecd33" category="list-text">Le soluzioni/i dispositivi di ottimizzazione di rete devono essere configurati per passare attraverso le porte specifiche del caching edge BlueXP.</block>
   <block id="047ff8e79c7124b6aed2f30a879e9d2b" category="section-title">Best practice antivirus</block>
-  <block id="886158b7c4852279bc16ee81496631c9" category="paragraph">NetApp ha testato i prodotti antivirus più comunemente utilizzati, tra cui Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium e Windows Defender da utilizzare insieme al caching edge BlueXP. Il software antivirus deve essere certificato da NetApp ed è supportato solo se configurato con l'elenco di esclusione appropriato. Vedere l'Appendice A nella<block ref="16f037677ba4ac06616103e429c60f34" category="inline-link-rx"></block></block>
   <block id="204d44b6be54971c264dcdd956240244" category="admonition">L'aggiunta di un antivirus a un'appliance Edge può introdurre un impatto del 10-20% sulle performance degli utenti.</block>
   <block id="77e4365f0d8727fe3c465fb04f26ce93" category="section-title">Configurare le esclusioni</block>
   <block id="7e97ed382f6a1568b4024c1aafe5994c" category="paragraph">Il software antivirus o altre utilità di indicizzazione o scansione di terze parti non devono mai eseguire la scansione del disco D: Sull'istanza di Edge. Queste scansioni dell'unità edge server D: Comportano numerose richieste di apertura dei file per l'intero namespace della cache. In questo modo, i file fetch sulla WAN su tutti i file server vengono ottimizzati nel data center. Si verificherà un flooding della connessione WAN e un carico non necessario sull'istanza di Edge, con conseguente peggioramento delle performance.</block>
@@ -529,7 +506,6 @@
   <block id="c9539e6a7ea02b24261db0b58156156f" category="paragraph">Questa configurazione consente di implementare e gestire l'intera implementazione BlueXP edge caching lato server, incluso BlueXP edge caching Management Server e BlueXP edge caching Core, da BlueXP.</block>
   <block id="a4bae3b774c4cc05ca00a01a97ff00ca" category="section-title">Opzioni di implementazione manuale</block>
   <block id="8e990b2873e828e4331073d3a2ac1f62" category="paragraph">Le configurazioni di edge caching BlueXP sono supportate anche con Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSX per sistemi ONTAP e Cloud Volumes Service su Google Cloud. Le soluzioni on-premise sono disponibili anche sulle piattaforme NetApp AFF e FAS. In queste installazioni, i componenti di BlueXP edge caching lato server devono essere configurati e implementati manualmente, non utilizzando BlueXP.</block>
-  <block id="3dcadf3bb59f115f566e304bb89d2481" category="paragraph">Vedere<block ref="16f037677ba4ac06616103e429c60f34" category="inline-link-rx"></block> per ulteriori informazioni.</block>
   <block id="faf3daf8482ac48bad777b0aceb12529" category="section-title">Come funziona il caching edge BlueXP</block>
   <block id="bfd753b1b317fe448cbf93742e4b8470" category="paragraph">BlueXP edge caching crea un fabric software che memorizza nella cache i set di dati attivi negli uffici remoti a livello globale. Di conseguenza, agli utenti aziendali viene garantito un accesso trasparente ai dati e performance ottimali su scala globale.</block>
   <block id="74df1466e72718d74f41b23bf918d610" category="inline-image-macro">Un diagramma che mostra i componenti di caching edge BlueXP all'edge e al core.</block>
@@ -565,7 +541,6 @@
   <block id="54ec0cdb19cb605eacd486e1e3eae2e4" category="paragraph">BlueXP edge caching include un License Management Server (LMS) basato su software, che consente di consolidare la gestione delle licenze e distribuire le licenze a tutte le istanze Core ed Edge utilizzando un meccanismo automatizzato.</block>
   <block id="24b5cd8cad83af73f3fef17c36994df9" category="paragraph">Quando si implementa la prima istanza Core nel data center o nel cloud, è possibile scegliere di designare tale istanza come LMS per la propria organizzazione. Questa istanza di LMS viene configurata una volta, si connette al servizio di abbonamento (su HTTPS) e convalida l'abbonamento utilizzando l'ID cliente fornito dal nostro reparto di assistenza/operazioni al momento dell'abilitazione dell'abbonamento. Una volta effettuata questa designazione, associare le istanze di Edge a LMS fornendo l'ID cliente e l'indirizzo IP dell'istanza di LMS.</block>
   <block id="3fbdffd6b695a9bc6ac6bcd1e40fd200" category="paragraph">Quando acquisti licenze Edge aggiuntive o rinnovi l'abbonamento, il nostro reparto assistenza/operazioni aggiorna i dettagli della licenza, ad esempio il numero di siti o la data di scadenza dell'abbonamento. Dopo che l'LMS ha richiesto il servizio di abbonamento, i dettagli della licenza vengono aggiornati automaticamente sull'istanza di LMS e verranno applicati alle istanze di GFC Core ed Edge.</block>
-  <block id="c8f4638b2e8300d1221c9f5fcd2483c6" category="paragraph">Vedere<block ref="16f037677ba4ac06616103e429c60f34" category="inline-link-rx"></block> per ulteriori dettagli sulle licenze.</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">Limitazioni</block>
   <block id="6c7f33700ec1daf2a7db9d9ef1a1b6d8" category="paragraph">La versione di BlueXP edge caching supportata in BlueXP (Cloud Volumes Edge cache) richiede che la piattaforma di storage back-end utilizzata come storage centrale sia un ambiente di lavoro in cui è stato implementato un nodo singolo o una coppia ha Cloud Volumes ONTAP in Azure, AWS o Google Cloud.</block>
   <block id="01eb0b4b5071a2cfc0876bc37b144a78" category="inline-link">Panoramica e inserimento della Global file cache</block>
@@ -599,10 +574,6 @@
   <block id="1f56bc157b53331171e2209738abd411" category="section-title">License Management Server è stato migliorato per funzionare in ambienti molto restrittivi</block>
   <block id="706163f56e3d19088d2a54cd0451269e" category="paragraph">Durante la configurazione della licenza, il License Management Server (LMS) deve avere accesso a Internet per raccogliere i dettagli della licenza da NetApp/Zuora. Una volta completata la configurazione, il sistema LMS può continuare a lavorare in modalità offline e fornire funzionalità di licenza anche se si trova in ambienti restrittivi.</block>
   <block id="1b66d26240c6a01df03ec7dc4a6d1a2b" category="section-title">L'interfaccia utente di Edge Sync in Optimus è stata migliorata per mostrare l'elenco dei client connessi su un Edge coordinatore</block>
-  <block id="9463b6d7b9d38e544c6a7eb98988bb3b" category="section-title">Nuova funzionalità Metadata Edge Sync</block>
-  <block id="2e0922ffb3ae1ae6ac16997e734d5154" category="paragraph">Questa funzione "Metadata Edge Sync" utilizza la funzionalità di sincronizzazione Edge come framework principale. Solo le informazioni sui metadati vengono aggiornate su tutti gli edge sottoscritti e i file/cartelle vengono creati sui computer Edge.</block>
-  <block id="2273c570a2dcacbb1c4bb77abccca54b" category="section-title">Miglioramenti del servizio License Manager</block>
-  <block id="03036f549995f5d3240d1c89c4f2f496" category="paragraph">Il servizio Global file cache License Management Server (LMS) è stato migliorato per rilevare automaticamente le impostazioni proxy. Ciò consente una configurazione perfetta.</block>
   <block id="841cb7cfb619b5923fb3b38f50f53e0b" category="summary">Si consiglia di formare gli utenti sulle Best practice per l'accesso ai file condivisi tramite il caching edge di BlueXP.</block>
   <block id="1953aca0238eceda58cb0a10075ecc1e" category="doc">Formazione per l'utente finale</block>
   <block id="ae12b314fd246da90162110a32a17a86" category="paragraph">Questa è la fase finale dell'implementazione del caching edge BlueXP, la fase di implementazione per l'utente finale.</block>
@@ -616,7 +587,6 @@
   <block id="17212542e3e7df3bdd7a3df903ed851c" category="paragraph"><block ref="17212542e3e7df3bdd7a3df903ed851c" category="inline-link-macro-rx"></block></block>
   <block id="b9c5f151d07a94019ba26f5d3579bcf9" category="inline-link-macro">Documento Word (.docx)</block>
   <block id="a314a20204b96ce855b4edecf455498b" category="list-text">Comunicazioni di assunzione<block ref="ec13a4ed87a907c97165059568a0b0f6" category="inline-link-macro-rx"></block></block>
-  <block id="5513c31a1ae4ca4e61f2d6da378db64a" category="paragraph">Vedere il capitolo 14 della<block ref="16f037677ba4ac06616103e429c60f34" category="inline-link-rx"></block> per materiale aggiuntivo.</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp fornisce supporto per BlueXP in diversi modi. Sono disponibili opzioni complete di supporto autonomo gratuito 24 ore su 24, 7 giorni su 7, come articoli della knowledge base (KB) e un forum della community. La registrazione al supporto include il supporto tecnico remoto via web ticketing.</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">Richiedi assistenza</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp fornisce supporto per BlueXP e i suoi servizi cloud in diversi modi. Sono disponibili opzioni complete di supporto autonomo gratuito 24 ore su 24, 7 giorni su 7, come articoli della knowledge base (KB) e un forum della community. La registrazione al supporto include il supporto tecnico remoto via web ticketing.</block>
@@ -635,10 +605,7 @@
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">Crea un caso con il supporto NetApp</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">Oltre alle opzioni di supporto autonomo sopra descritte, puoi collaborare con uno specialista del supporto NetApp per risolvere eventuali problemi dopo l'attivazione del supporto.</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">Prima di iniziare</block>
-  <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">In BlueXP, fare clic su *Guida &gt; supporto*.</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">Nella pagina *risorse*, scegliere una delle opzioni disponibili in supporto tecnico:</block>
-  <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">Fai clic su *Chiamaci* per parlare con qualcuno al telefono. Viene visualizzata una pagina su netapp.com che elenca i numeri di telefono che è possibile chiamare.</block>
-  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">Fare clic su *Crea un caso* per aprire un ticket con uno specialista del supporto NetApp:</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Servizio*: Selezionare il servizio a cui è associato il problema. Ad esempio, BlueXP quando si tratta di un problema di supporto tecnico relativo a flussi di lavoro o funzionalità all'interno del servizio.</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*Ambiente di lavoro*: Se applicabile allo storage, selezionare *Cloud Volumes ONTAP* o *on-premise* e quindi l'ambiente di lavoro associato.</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">L'elenco degli ambienti di lavoro rientra nell'ambito dell'account, dell'area di lavoro e del connettore BlueXP selezionato nel banner superiore del servizio.</block>
@@ -650,7 +617,6 @@
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">Gli allegati sono limitati a 25 MB per file. Sono supportate le seguenti estensioni di file: Txt, log, pdf, jpg/jpeg, rtf, doc/docx, xls/xlsx e csv.</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">Schermata del modulo Crea un caso che consente di creare un caso con il supporto NetApp.</block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">Viene visualizzata una finestra a comparsa con il numero del caso di supporto. Uno specialista del supporto NetApp esaminerà il tuo caso e ti contatterà al più presto.</block>
-  <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">Per una cronologia dei casi di supporto, fare clic su *Impostazioni &gt; Cronologia* e cercare le azioni denominate "Crea caso di supporto". Un pulsante all'estrema destra consente di espandere l'azione per visualizzare i dettagli.</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">È possibile che venga visualizzato il seguente messaggio di errore quando si tenta di creare un caso:</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"Non sei autorizzato a creare un caso per il servizio selezionato"</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">Utilizza la chat integrata nel prodotto</block>
@@ -665,10 +631,8 @@
   <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">È possibile aggiungere o rimuovere colonne di interesse e filtrare il contenuto di colonne come priorità e Stato. Altre colonne offrono funzionalità di ordinamento.</block>
   <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">Per ulteriori informazioni, consulta la procedura riportata di seguito.</block>
   <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">A livello di caso, offriamo la possibilità di aggiornare le note del caso o chiudere un caso che non è già in stato chiuso o in attesa di chiusura.</block>
-  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">Fare clic su *Gestione casi* e, se richiesto, aggiungere l'account NSS a BlueXP.</block>
   <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">La pagina *Gestione del caso* mostra i casi aperti relativi all'account NSS associato all'account utente BlueXP. Si tratta dello stesso account NSS visualizzato nella parte superiore della pagina *gestione NSS*.</block>
   <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">Se si desidera, modificare le informazioni visualizzate nella tabella:</block>
-  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">In *Organization's Cases* (casi dell'organizzazione), fare clic su *View* (Visualizza) per visualizzare tutti i casi associati alla società.</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">Modificare l'intervallo di date scegliendo un intervallo di date esatto o scegliendo un intervallo di tempo diverso.</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">Una schermata dell'opzione sopra la tabella nella pagina di gestione del caso che consente di scegliere un intervallo di date esatto o gli ultimi 7 giorni, 30 giorni o 3 mesi.</block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">Filtrare il contenuto delle colonne.</block>
@@ -678,7 +642,6 @@
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">Un'icona con tre punti che compare nell'ultima colonna della tabella</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*Visualizza caso*: Visualizza tutti i dettagli relativi a un caso specifico.</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*Aggiorna note sul caso*: Fornisci ulteriori dettagli sul problema oppure seleziona *carica file* per allegare fino a un massimo di cinque file.</block>
-  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*Chiudi caso*: Fornisci i dettagli sul motivo per cui stai chiudendo il caso e fai clic su *Chiudi caso*.</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">Una schermata che mostra le azioni che è possibile eseguire dopo aver selezionato il menu nell'ultima colonna della tabella.</block>
   <block id="54b9b1f5c21bdf70595c700a22577ed0" category="sidebar">Documenti per il caching edge BlueXP</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">Note di rilascio</block>
@@ -715,18 +678,13 @@
   <block id="278930628a6575fa0fe23ecd27374bfb" category="paragraph">Implementare Cloud Volumes ONTAP e configurare le condivisioni di file SMB. Per ulteriori informazioni, vedere<block ref="8198e799bf373d0d471ff3f551725308" category="inline-link-rx"></block>,<block ref="3718aa4b740ed1680c17ac188cf71498" category="inline-link-rx"></block>, o.<block ref="958eb36238d0859ba89677740ca359aa" category="inline-link-rx"></block>.</block>
   <block id="b48c78d3da26a7311e5288a66ed4f4d8" category="paragraph">BlueXP edge caching supporta Cloud Volumes ONTAP implementati in Azure, AWS e Google Cloud. Per informazioni dettagliate su prerequisiti, requisiti e istruzioni di implementazione, vedere<block ref="8198e799bf373d0d471ff3f551725308" category="inline-link-rx"></block>,<block ref="3718aa4b740ed1680c17ac188cf71498" category="inline-link-rx"></block>, o.<block ref="958eb36238d0859ba89677740ca359aa" category="inline-link-rx"></block></block>
   <block id="45456d22bd7241b79d0f62620d5888d8" category="list-text">In alternativa, per i sistemi Cloud Volumes ONTAP in Azure e GCP, è possibile scegliere il pacchetto Cloud Volumes ONTAP cache edge. Questa licenza basata sulla capacità consente di implementare una singola istanza di BlueXP edge caching Edge Edge per ogni 3 TIB di capacità acquistata.<block ref="2ad67afc7a67ecb4970c40ef2d9c9dc1" category="inline-link-rx"></block>.</block>
-  <block id="10dc1eee3d75610cc244de50455508d3" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. I pacchetti software aggiornati sono disponibili all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
   <block id="77474efd411b7748abfa1c88a3e0137c" category="paragraph"><block ref="77474efd411b7748abfa1c88a3e0137c" category="inline-link-rx"></block></block>
   <block id="975b3327995267bde41cd6b4ce0c772d" category="paragraph">Questa versione offre le nuove funzionalità elencate di seguito. Risolve inoltre i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
   <block id="f5f78956220294d550567ec883fe45c6" category="paragraph"><block ref="f5f78956220294d550567ec883fe45c6" category="inline-link-rx"></block></block>
-  <block id="2466aaf1d1f57cfbe736e835f936a857" category="paragraph">Questa versione risolve i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>.</block>
-  <block id="83a5e35b6b359abe6f4e440efbdffd38" category="paragraph">Il software Global file cache Edge per la versione 1.3.0 è disponibile all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">Modificare le colonne visualizzate nella tabella facendo clic su <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> e quindi scegliere le colonne che si desidera visualizzare.</block>
   <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">Gestire un caso esistente facendo clic su <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> e selezionando una delle opzioni disponibili:</block>
   <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
   <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">Scopri come gestire le credenziali associate all'accesso a BlueXP</block>
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">Per utilizzare la funzione *creazione di un caso*, è necessario prima associare le credenziali del sito di supporto NetApp al login BlueXP.<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>.</block>
@@ -737,10 +695,7 @@
   <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">Per il supporto tecnico sulle seguenti soluzioni di cloud provider, fare riferimento a "Assistenza" nella documentazione di BlueXP relativa a tale prodotto.</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">Registrare l'account BlueXP per il supporto NetApp</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">Per registrarsi al supporto e attivare i diritti di supporto, un utente del proprio account BlueXP deve associare un account del sito di supporto NetApp al proprio account di accesso BlueXP. La modalità di registrazione al supporto NetApp dipende dal fatto che si disponga già di un account NetApp Support Site (NSS).</block>
-  <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">Nella parte superiore destra della console BlueXP, fare clic sull'icona Impostazioni e selezionare *credenziali*.</block>
-  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">Fare clic su *User Credentials* (credenziali utente).</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">Selezionare *Aggiungi credenziali NSS* e seguire la richiesta di autenticazione del sito di supporto NetApp.</block>
-  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">Per confermare che la procedura di registrazione è stata eseguita correttamente, fare clic sull'icona Guida e selezionare *supporto*.</block>
   <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">La pagina *risorse* dovrebbe mostrare che il tuo account è registrato per il supporto.</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">Una schermata che mostra il numero di serie di un account, una casella di controllo verde e il testo registrato per il supporto.</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
@@ -757,4 +712,55 @@
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Aggiornamento del software Cloud Volumes ONTAP alla versione più recente</block>
   <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">L'associazione delle credenziali NSS all'account BlueXP è diversa dall'account NSS associato a un account utente BlueXP.</block>
   <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">Queste credenziali NSS sono associate all'ID account BlueXP specifico. Gli utenti che appartengono all'account BlueXP possono accedere a queste credenziali da *Support &gt; NSS Management*.</block>
+  <block id="e5bc2a0e71d5abce484fd71fede7010b" category="list-text"><block ref="e5bc2a0e71d5abce484fd71fede7010b" category="inline-link-rx"></block></block>
+  <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">Nella parte superiore destra della console BlueXP, selezionare l'icona Impostazioni e selezionare *credenziali*.</block>
+  <block id="f19ab635e6d5f884a22ee4ce067fdbfd" category="list-text">Selezionare *User Credentials* (credenziali utente).</block>
+  <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">Per confermare che la procedura di registrazione è stata eseguita correttamente, selezionare l'icona Guida e selezionare *supporto*.</block>
+  <block id="d889e6e7cc4c5509ab5b37f8fc894e46" category="list-text">Nella parte superiore destra della console BlueXP, selezionare l'icona della Guida e selezionare *supporto*.</block>
+  <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">Selezionare *Gestione NSS &gt; Aggiungi account NSS*.</block>
+  <block id="85b9386ed443776127e099931d73448a" category="list-text">Quando richiesto, selezionare *continua* per essere reindirizzato a una pagina di accesso Microsoft.</block>
+  <block id="5ba6747bf15f739cc0cf34dfcd9092cb" category="paragraph">Vedere<block ref="c37d59ba163d6e06d70bc7a9326dd95e" category="inline-link-rx"></block> per ulteriori informazioni.</block>
+  <block id="a44e790b16f9cffefa0f4187bd06f1b5" category="paragraph">Vedere<block ref="c37d59ba163d6e06d70bc7a9326dd95e" category="inline-link-rx"></block> per ulteriori dettagli sulle licenze.</block>
+  <block id="924b35617c7b4bb0713e5eedb1777802" category="section-title">1 agosto 2023 (versione 2,3)</block>
+  <block id="4dbe51f9893020550dd4c70ac9a71474" category="paragraph">Questa versione risolve i problemi descritti in<block ref="c98734a3bbf4b45bac275605eaeefc3f" category="inline-link-rx"></block>. I pacchetti software aggiornati sono disponibili all'indirizzo<block ref="89fd140dfa15c4587519958830d6000f" category="inline-link-rx"></block>.</block>
+  <block id="ee7763f06a0cdae5ce08a7b5b3e39caf" category="paragraph">Fare riferimento al Capitolo 14 nella<block ref="c37d59ba163d6e06d70bc7a9326dd95e" category="inline-link-rx"></block> per materiale aggiuntivo.</block>
+  <block id="1b14c7d9f7e2a3e17c240838dca13ab2" category="list-text">Sono state apportate le seguenti correzioni all'interfaccia utente di Optimus Configuration:</block>
+  <block id="3e07a70c311392c24189762666453bfb" category="list-text">Mostra informazioni significative per gli errori anziché le stringhe di eccezione.</block>
+  <block id="4113def3f24a2cfb74396128b890048e" category="list-text">Visualizza correttamente la data di scadenza della licenza invece di qualsiasi valore predefinito.</block>
+  <block id="9e88fd947fddc14c82d45ca71890b2f9" category="list-text">Visualizza correttamente i campi nome utente/password quando SSL è attivato nell'interfaccia utente.</block>
+  <block id="b1e950b28ed77a6dbc8551d956f50d5c" category="list-text">Non risponde quando un core GFC irraggiungibile è configurato nella scheda di configurazione di Optimus UI Edge.</block>
+  <block id="405e94e9006be134dde811526deb2d7e" category="list-text">Consente di selezionare più nomi di cache/edge dall'elenco a discesa Edge.</block>
+  <block id="6c2873fda507fdb945ac7d8621d8dab4" category="list-text">Le informazioni di riepilogo delle licenze vengono visualizzate correttamente durante la visualizzazione delle licenze scadute e non scadute.</block>
+  <block id="77e41f7861d7c4ec1c29ad511af6b068" category="list-text">È stato corretto il riavvio del servizio TappN solo quando la configurazione è stata aggiornata correttamente.</block>
+  <block id="2dfe679cdebbdabcf634abc46769b41d" category="list-text">È stato aggiunto un pulsante di aggiornamento nella procedura guidata per la prima volta per visualizzare il conteggio dei bordi.</block>
+  <block id="07f3d03058fddb1ba98cd7560e2d1e1c" category="list-text">Le informazioni SSL sono ora visualizzate nella pagina di riepilogo della procedura guidata per la prima volta.</block>
+  <block id="4c8e9d840cf969c51081257a1f678250" category="list-text">Aggiunta infrastruttura in Tum per consentire la configurazione dei timeout minidump e per eseguire correttamente un minidump.</block>
+  <block id="efa408be5d83ba4187b6a47f2e72d25d" category="list-text">Optimus e la procedura guidata per la prima volta visualizzano il numero di licenze appropriato e mostrano un'eccezione quando il conteggio delle licenze diventa zero.</block>
+  <block id="72fec5f6f82302eeed86aa7d4ccc57bb" category="list-text">Optimus PSM visualizza ora un messaggio di errore appropriato quando il nome del server Edge immesso è vuoto.</block>
+  <block id="7af366a5f9f00d854ab6520964e5d709" category="list-text">È stato risolto un problema a causa del quale i lavori di pre-popolamento non vengono applicati correttamente a più nomi di cache in Optimus PSM.</block>
+  <block id="849f9071693ee5f3ab1d3ea921d0d933" category="list-text">La configurazione del Manager di licenza è stata migliorata per visualizzare gli errori hardware anziché gli errori software.</block>
+  <block id="6e8d1fe7df03bdc15df4dfdebc387d74" category="list-text">L'interfaccia utente di registrazione Zoura visualizza un errore se è già configurata.</block>
+  <block id="a3cbdfdc99ed48b83f55037334ad46e2" category="list-text">Optimus UI e Optimus PSM ora mostrano i requisiti di CPU e memoria rispettivamente di 8 CPU e 32 GB di RAM.</block>
+  <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">In BlueXP, selezionare *Guida &gt; supporto*.</block>
+  <block id="6a1b74969231967ed071d465206b15c7" category="list-text">Selezionare *Chiamateci* se si desidera parlare con qualcuno al telefono. Viene visualizzata una pagina su netapp.com che elenca i numeri di telefono che è possibile chiamare.</block>
+  <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">Selezionare *Crea un caso* per aprire un ticket con uno specialista del supporto NetApp:</block>
+  <block id="0ff9b4b8684b9e03c9c1e1320935eae3" category="paragraph">Per una cronologia dei casi di supporto, selezionare *Impostazioni &gt; Cronologia* e cercare le azioni denominate "Crea caso di supporto". Un pulsante all'estrema destra consente di espandere l'azione per visualizzare i dettagli.</block>
+  <block id="0a4050ac39772e9281a9aba225254bf8" category="list-text">Selezionare *Gestione casi* e, se richiesto, aggiungere l'account NSS a BlueXP.</block>
+  <block id="1d39d3ab518e1e3f16cbafb2a56e1fd9" category="list-text">In *Organization's Cases* (casi dell'organizzazione), selezionare *View* (Visualizza) per visualizzare tutti i casi associati alla società.</block>
+  <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">Modificare le colonne visualizzate nella tabella selezionando <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> e quindi scegliere le colonne che si desidera visualizzare.</block>
+  <block id="348552521b849746260fe8d296d34c15" category="list-text">Gestire un caso esistente selezionando <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> e selezionando una delle opzioni disponibili:</block>
+  <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*Chiudi caso*: Fornisci i dettagli sul motivo per cui stai chiudendo il caso e seleziona *Chiudi caso*.</block>
+  <block id="327a1d8b4a551bbdec4fcca282e3ac83" category="paragraph">Per ulteriori informazioni sulla configurazione avanzata di Global file cache Edge, consultare<block ref="c37d59ba163d6e06d70bc7a9326dd95e" category="inline-link-rx"></block>.</block>
+  <block id="08a835cc47bb06b7b15239f4039fb698" category="paragraph"><block ref="5bd9ed7124a4827b8a770916ec8eb391" category="inline-link-rx"></block>
+<block ref="f8a53e15446d9f92c48869f342d00b70" category="inline-link-rx"></block></block>
+  <block id="c80862bbcf8f857da81705513310d33a" category="paragraph"><block ref="e439e61317b9d8e0964fc4278b02da4f" category="inline-link-rx"></block>
+<block ref="6521fb91943407eb7773f8de6fb3c073" category="inline-link-rx"></block></block>
+  <block id="1ff2a72d772b591ce092f04090df1f7d" category="list-text">Software BlueXP Edge Caching Edge:</block>
+  <block id="4600738f0591f7ca9b82d1b1873f082f" category="paragraph"><block ref="4600738f0591f7ca9b82d1b1873f082f" category="inline-link-rx"></block></block>
+  <block id="0bc9b34d46e682262d4fe6eb551bdc94" category="paragraph"><block ref="0bc9b34d46e682262d4fe6eb551bdc94" category="inline-link-rx"></block></block>
+  <block id="e2ed07bb6933c98e532659727830bc52" category="inline-link-macro">Attenersi alla procedura riportata di seguito</block>
+  <block id="ab22ada227591d3e283d838dc6821bf3" category="paragraph"><block ref="820d518b33801e5de2462ff4ce963d09" category="inline-link-macro-rx"></block> Per aggiornare il software Edge di caching edge di BlueXP.</block>
+  <block id="09efa83c68cf12fff60c19fb03384093" category="paragraph">Per ulteriori informazioni, consultare<block ref="c37d59ba163d6e06d70bc7a9326dd95e" category="inline-link-rx"></block>.</block>
+  <block id="5c6e720ae4e0961cbdcf991a4f7b5126" category="paragraph">NetApp sconsiglia l'installazione o l'applicazione di soluzioni antivirus o di monitoraggio su qualsiasi istanza abilitata per il caching edge BlueXP (Core o Edge). Nel caso in cui una soluzione venga installata, a scelta o in base a policy, è necessario applicare le seguenti Best practice e raccomandazioni. Per le suite antivirus più comuni, consultare l'Appendice A nella<block ref="c37d59ba163d6e06d70bc7a9326dd95e" category="inline-link-rx"></block>.</block>
+  <block id="31acc98f70a8cd7f5a510a0ad5befbe8" category="paragraph">NetApp ha testato i prodotti antivirus più comunemente utilizzati, tra cui Cylance, McAfee, Symantec, Sophos, Trend Micro, Kaspersky, Crowd Strike, Cisco AMP, Tannium e Windows Defender da utilizzare insieme al caching edge BlueXP. Il software antivirus deve essere certificato da NetApp ed è supportato solo se configurato con l'elenco di esclusione appropriato. Vedere l'Appendice A nella<block ref="c37d59ba163d6e06d70bc7a9326dd95e" category="inline-link-rx"></block></block>
 </blocks>
