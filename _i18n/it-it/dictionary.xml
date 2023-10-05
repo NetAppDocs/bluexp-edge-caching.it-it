@@ -520,8 +520,6 @@
   <block id="bca1fbce4a3bdcddfdb1aa5bb1b5f6da" category="paragraph">In Azure, viene eseguito su una macchina virtuale D2s_V3 o equivalente (2 vCPU/8 GB di RAM) con SSD standard da 127 GB</block>
   <block id="c6b798b0bebd4b2ec1cf891e6cd66c67" category="paragraph">In AWS, viene eseguito su un'istanza m4.Large o equivalente (2 vCPU/8 GB RAM) con 127 GB di SSD General Purpose</block>
   <block id="2f0a1e2943548b4d2c575728fff09264" category="list-text">Core di caching edge BlueXP:</block>
-  <block id="817000ba632406cdb4b5a4da3a5c5221" category="paragraph">In Azure, viene eseguito su una macchina virtuale D4S_V3 o equivalente (4 vCPU/16 GB di RAM) con SSD premium da 127 GB</block>
-  <block id="6869983628ce136a6778d9ced07d3b4b" category="paragraph">In AWS, viene eseguito su un'istanza m4.xlarge o equivalente (4 vCPU/16 GB di RAM) con 127 GB di SSD General Purpose</block>
   <block id="6962e9afd3ce89facea38f30c619211e" category="list-text">Quando viene installato con Cloud Volumes ONTAP (le configurazioni supportate sono implementate completamente tramite BlueXP), sono disponibili due opzioni di prezzo:</block>
   <block id="07fb1269841f7291dfbea77bd07f01c9" category="list-text">Per i sistemi Cloud Volumes ONTAP, è possibile pagare 3,000 dollari per ogni istanza edge caching di BlueXP, all'anno.</block>
   <block id="ec9614a46239aa59499c4a94e919963a" category="inline-link">Scopri di più qui</block>
@@ -654,7 +652,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">Webinar sul cloud</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">Altre risorse</block>
   <block id="f79eca534d02cb718a61576ea3936648" category="sidebar">Casi di utilizzo di BlueXP Edge Caching</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">Tutta la documentazione BlueXP</block>
   <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
   <block id="91ea063dfcaf2cbae3a931cc1d0a28a8" category="paragraph">Si consiglia di utilizzare un volume sufficientemente grande per ospitare il set di dati totale dell'applicazione, oltre alla possibilità di scalare di conseguenza in base alla crescita del set di dati. Se nell'ambiente di lavoro sono presenti più aggregati, vedere<block ref="89800d58631629b790a13a9de7981f0e" category="inline-link-rx"></block> per determinare quale aggregato dispone dello spazio più disponibile per il nuovo volume.</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
@@ -769,4 +766,8 @@
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">Ottieni supporto per un file service del cloud provider</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">Per supporto tecnico relativo a un file service di un cloud provider, alla sua infrastruttura o a una soluzione che utilizza il servizio, fare riferimento a "Guida in linea" nella documentazione BlueXP relativa a quel prodotto.</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">Per ricevere supporto tecnico specifico di BlueXP e delle relative soluzioni e servizi storage, utilizza le opzioni di supporto descritte di seguito.</block>
+  <block id="97928a9e688f12c514398167899b0948" category="paragraph">In Google Cloud, questo viene eseguito su un'istanza n2-standard-2 o equivalente (2 vCPU/8 GB RAM) con SSD General Purpose da 127 GB</block>
+  <block id="37224270f6fe9a8b986d9aebd0580f24" category="paragraph">In Azure, viene eseguito su una macchina virtuale D8s_V4 o equivalente (8 vCPU/32 GB RAM) con SSD Premium da 127 GB</block>
+  <block id="de3597f52173f419dfcb5b6093c8f91b" category="paragraph">In AWS, viene eseguito su un'istanza m4,2xlarge o equivalente (8 vCPU/32 GB RAM) con SSD General purpose da 127 GB</block>
+  <block id="13a8d1c98f73a6d8e45079d3d40dd107" category="paragraph">In Google Cloud, questo viene eseguito su un'istanza n2-standard-8 o equivalente (8 vCPU/32 GB RAM) con SSD General Purpose da 127 GB</block>
 </blocks>

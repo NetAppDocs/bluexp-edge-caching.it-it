@@ -131,12 +131,18 @@ In Azure, viene eseguito su una macchina virtuale D2s_V3 o equivalente (2 vCPU/8
 +
 In AWS, viene eseguito su un'istanza m4.Large o equivalente (2 vCPU/8 GB RAM) con 127 GB di SSD General Purpose
 
++
+In Google Cloud, questo viene eseguito su un'istanza n2-standard-2 o equivalente (2 vCPU/8 GB RAM) con SSD General Purpose da 127 GB
+
 ** Core di caching edge BlueXP:
 +
-In Azure, viene eseguito su una macchina virtuale D4S_V3 o equivalente (4 vCPU/16 GB di RAM) con SSD premium da 127 GB
+In Azure, viene eseguito su una macchina virtuale D8s_V4 o equivalente (8 vCPU/32 GB RAM) con SSD Premium da 127 GB
 
 +
-In AWS, viene eseguito su un'istanza m4.xlarge o equivalente (4 vCPU/16 GB di RAM) con 127 GB di SSD General Purpose
+In AWS, viene eseguito su un'istanza m4,2xlarge o equivalente (8 vCPU/32 GB RAM) con SSD General purpose da 127 GB
+
++
+In Google Cloud, questo viene eseguito su un'istanza n2-standard-8 o equivalente (8 vCPU/32 GB RAM) con SSD General Purpose da 127 GB
 
 
 
