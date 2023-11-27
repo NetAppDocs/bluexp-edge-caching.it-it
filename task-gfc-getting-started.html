@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head class="at-element-marker">
+  <title>Per iniziare | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Per iniziare | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/it-it/bluexp-edge-caching/task-gfc-getting-started.html" />
+	<meta property="og:description" content="Si utilizza BlueXP per implementare il software BlueXP edge caching Management Server e Core nell"ambiente di lavoro." />
+  <meta property="og:image" content="https://docs.netapp.com/it-it/bluexp-edge-caching/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Si utilizza BlueXP per implementare il software BlueXP edge caching Management Server e Core nell"ambiente di lavoro.">
+  <meta name="keywords" content=" global file cache, core, management server"><!-- Icons -->
+  <link rel="icon" href="/it-it/bluexp-edge-caching/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/it-it/bluexp-edge-caching/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/it-it/bluexp-edge-caching/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/it-it/bluexp-edge-caching/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/it-it/bluexp-edge-caching/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/it-it/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/bluexp-edge-caching/task-gfc-getting-started.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+        $(".page-nav__link").first().addClass('page-nav__link--active');
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/it-it/bluexp-edge-caching/js/na-search.js'></script><script src='/it-it/bluexp-edge-caching/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/it-it/bluexp-edge-caching/js/custom-dropdown.js'></script>
+  <script src='/it-it/bluexp-edge-caching/js/FileSaver.min.js'></script>
+  <script src='/it-it/bluexp-edge-caching/js/jszip-utils.min.js'></script>
+  <script src='/it-it/bluexp-edge-caching/js/jszip.min.js'></script><script src='/it-it/bluexp-edge-caching/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/it-it/bluexp-edge-caching/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/it">
+                <image id="ie-header-logo" src="/it-it/bluexp-edge-caching/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/it/support-and-training/documentation/">Documenti</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/it-it/bluexp-edge-caching/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">Italiano</span>
+                    <img src="/it-it/bluexp-edge-caching/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/it-it/bluexp-edge-caching/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/it-it/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-cn/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/bluexp-edge-caching/task-gfc-getting-started.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/it-it/bluexp-edge-caching/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">Tutto NetApp</span>
+                    <img src="/it-it/bluexp-edge-caching/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/it-it/bluexp-edge-caching/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">Supporto</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">Knowledge Base</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/it/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">Training</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/it-it/bluexp-edge-caching/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/it-it/bluexp-edge-caching/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">Tutti i documenti</a>
+    </li>
+    
+    
+    <li class="">
+      <a href="https://docs.netapp.com/us-en/cloud/">Documentazione Cloud</a>
+    </li>
+    
+
+    
+    <li class="">
+      <a href="https://docs.netapp.com/it-it/bluexp-family/">
+        BlueXP
+      </a>
+    </li>
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/it-it/bluexp-edge-caching/">-->
+      BlueXP edge caching
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/it-it/bluexp-edge-caching/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/it-it/bluexp-edge-caching/search.html" 
+        data-type="widget"
+        data-placeholder="Esplora la documentazione"
+        data-no-results-found="Nessun risultato per {query}"
+        data-did-you-mean="Cerca {suggestion}."
+        data-no-results-found-did-you-mean="Nessun risultato per {query}. Intendi {suggestion}?"
+        data-results-found="{hitCount} risultati trovati"
+        data-error-message="Si è verificato un errore. Riprova."
+        data-error-reset="Reimposta ricerca"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Documenti per il caching edge BlueXP"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/it-it/bluexp-edge-caching/index.html">
+        Documenti per il caching edge BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note di rilascio"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/it-it/bluexp-edge-caching/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/it-it/bluexp-edge-caching/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Note di rilascio</div>-->
+         Note di rilascio
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Novità"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/whats-new.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/whats-new.html">
+        Novità
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Problemi risolti"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/fixed-issues.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/fixed-issues.html">
+        Problemi risolti
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Inizia subito"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/it-it/bluexp-edge-caching/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/it-it/bluexp-edge-caching/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Inizia subito</div>-->
+         Inizia subito
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Scopri di più sul caching edge BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/concept-gfc.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/concept-gfc.html">
+        Scopri di più sul caching edge BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prerequisiti per il caching edge BlueXP"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/concept-before-you-begin-to-deploy-gfc.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/concept-before-you-begin-to-deploy-gfc.html">
+        Prerequisiti per il caching edge BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Implementare e concedere in licenza il caching edge BlueXP"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/task-gfc-getting-started.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/task-gfc-getting-started.html">
+        Implementare e concedere in licenza il caching edge BlueXP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Prerequisiti di BlueXP edge caching Edge"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/download-gfc-resources.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/download-gfc-resources.html">
+        Prerequisiti di BlueXP edge caching Edge
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Implementare BlueXP edge caching Edge"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/task-deploy-gfc-edge-instances.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/task-deploy-gfc-edge-instances.html">
+        Implementare BlueXP edge caching Edge
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Utilizzare il caching edge BlueXP"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/it-it/bluexp-edge-caching/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/it-it/bluexp-edge-caching/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Utilizzare il caching edge BlueXP</div>-->
+         Utilizzare il caching edge BlueXP
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Formazione per l'utente finale"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/concept-gfc-enduser-training.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/concept-gfc-enduser-training.html">
+        Formazione per l'utente finale
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Ulteriori informazioni"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/reference-gfc-additional-information.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/reference-gfc-additional-information.html">
+        Ulteriori informazioni
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Conoscenza e supporto"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/it-it/bluexp-edge-caching/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/it-it/bluexp-edge-caching/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Conoscenza e supporto</div>-->
+         Conoscenza e supporto
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Registrati per ricevere assistenza"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/task-support-registration.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/task-support-registration.html">
+        Registrati per ricevere assistenza
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Richiedi assistenza"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/task-get-help.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/it-it/bluexp-edge-caching/task-get-help.html">
+        Richiedi assistenza
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Note legali"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-gfc-getting-started.html" 
+      dale-entry-url="/legal-notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/it-it/bluexp-edge-caching/legal-notices.html">
+        Note legali
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/it-it/bluexp-edge-caching"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/it-it/bluexp-edge-caching"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/it-it/bluexp-edge-caching/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> La versione in lingua italiana fornita proviene da una traduzione automatica. Per eventuali incoerenze, fare riferimento alla versione in lingua inglese. </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">Per iniziare</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-05-31 14:48:07 +0000">05/31/2023</time>
+        
+    
+    
+        <span>Collaboratori
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/it-it/bluexp-edge-caching/images/discuss-sm.svg" alt="" class="github-icon" />Suggerisci modifiche</span>
+        <img src="/it-it/bluexp-edge-caching/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/it-it/bluexp-edge-caching/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-edge-caching.it-it/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/it-it/bluexp-edge-caching/task-gfc-getting-started.html&page-title=Per iniziare" class="page-nav-contribute-link" role="button">Richiedi modifiche alla documentazione</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/bluexp-edge-caching/blob/main/task-gfc-getting-started.adoc" class="page-nav-contribute-link" role="button">Modifica questa pagina</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >Scopri come collaborare</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/it-it/bluexp-edge-caching/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/it-it/bluexp-edge-caching/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/it-it/bluexp-edge-caching/pdfs/fullsite-sidebar/Documentazione_di_BlueXP_edge_caching.pdf" >
+                    <img src="/it-it/bluexp-edge-caching/images/pdf-icon.png" alt="" width="16" height="16"/>PDF del sito di questa documentazione</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/it-it/bluexp-edge-caching/pdfs/sidebar/Note_di_rilascio.pdf" 
+            
+          >
+            <img src="/it-it/bluexp-edge-caching/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Note di rilascio
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/it-it/bluexp-edge-caching/pdfs/sidebar/Inizia_subito.pdf" 
+            
+          >
+            <img src="/it-it/bluexp-edge-caching/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Inizia subito
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/it-it/bluexp-edge-caching/pdfs/sidebar/Utilizzare_il_caching_edge_BlueXP.pdf" 
+            
+          >
+            <img src="/it-it/bluexp-edge-caching/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Utilizzare il caching edge BlueXP
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/it-it/bluexp-edge-caching/pdfs/sidebar/Conoscenza_e_supporto.pdf" 
+            
+          >
+            <img src="/it-it/bluexp-edge-caching/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Conoscenza e supporto
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/it-it/bluexp-edge-caching/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>Raccolta di documenti PDF separati<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Si utilizza BlueXP per implementare il software BlueXP edge caching Management Server e Core nell&#8217;ambiente di lavoro.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="abilitare-il-caching-edge-bluexp-utilizzando-bluexp">Abilitare il caching edge BlueXP utilizzando BlueXP</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In questa configurazione verranno implementati il server di gestione del caching edge BlueXP e il core di caching edge BlueXP nello stesso ambiente di lavoro in cui è stato creato il sistema Cloud Volumes ONTAP utilizzando BlueXP.</p>
+</div>
+<div class="paragraph">
+<p>Guarda <a href="https://www.youtube.com/watch?v=TGIQVssr43A" target="_blank" rel="noopener">"questo video"</a> per visualizzare i passaggi dall&#8217;inizio alla fine.</p>
+</div>
+<div class="sect2">
+<h3 id="avvio-rapido">Avvio rapido</h3>
+<div class="paragraph">
+<p>Inizia subito seguendo questi passaggi o scorri verso il basso fino alle sezioni rimanenti per ottenere informazioni complete:</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png" alt="Uno"></span> Implementare Cloud Volumes ONTAP</div>
+<p>Implementare Cloud Volumes ONTAP e configurare le condivisioni di file SMB. Per ulteriori informazioni, vedere <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html" target="_blank" rel="noopener">"Lancio di Cloud Volumes ONTAP in Azure"</a>, <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html" target="_blank" rel="noopener">"Avvio di Cloud Volumes ONTAP in AWS"</a>, o. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html" target="_blank" rel="noopener">"Lancio di Cloud Volumes ONTAP in Google Cloud"</a>.</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png" alt="Due"></span> Implementare il server di gestione del caching edge BlueXP</div>
+<p>Distribuire un&#8217;istanza del server di gestione del caching edge BlueXP nello stesso ambiente di lavoro dell&#8217;istanza di Cloud Volumes ONTAP.</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png" alt="Tre"></span> Implementare il core di caching edge BlueXP</div>
+<p>Distribuire una o più istanze del core di caching edge BlueXP nello stesso ambiente di lavoro dell&#8217;istanza di Cloud Volumes ONTAP e unirsi al dominio Active Directory.</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png" alt="Quattro"></span> Licenza BlueXP edge caching</div>
+<p>Configurare il servizio LMS (License Management Server) di caching edge BlueXP su un&#8217;istanza Core di caching edge BlueXP. Per attivare l&#8217;abbonamento, è necessario disporre delle credenziali NSS o di un ID cliente e di un numero di abbonamento forniti da NetApp.</p>
+</div>
+<div class="paragraph quick-margin-para">
+<div class="title"><span class="image"><img src="https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png" alt="Cinque"></span> Implementare le istanze di BlueXP edge caching Edge</div>
+<p>Vedere <a href="task-deploy-gfc-edge-instances.html" target="_blank" rel="noopener">"Implementazione di istanze edge caching di BlueXP Edge"</a> Per implementare le istanze di BlueXP edge caching Edge in ogni posizione remota. Questo passaggio non viene eseguito con BlueXP.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="implementa-cloud-volumes-ontap-come-piattaforma-di-storage">Implementa Cloud Volumes ONTAP come piattaforma di storage</h3>
+<div class="paragraph">
+<p>BlueXP edge caching supporta Cloud Volumes ONTAP implementati in Azure, AWS e Google Cloud. Per informazioni dettagliate su prerequisiti, requisiti e istruzioni di implementazione, vedere <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html" target="_blank" rel="noopener">"Lancio di Cloud Volumes ONTAP in Azure"</a>, <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-aws.html" target="_blank" rel="noopener">"Avvio di Cloud Volumes ONTAP in AWS"</a>, o. <a href="https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-gcp.html" target="_blank" rel="noopener">"Lancio di Cloud Volumes ONTAP in Google Cloud"</a></p>
+</div>
+<div class="paragraph">
+<p>Tenere presente il seguente requisito aggiuntivo di caching edge BlueXP:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>È necessario configurare le condivisioni di file SMB sull&#8217;istanza di Cloud Volumes ONTAP.</p>
+<div class="paragraph">
+<p>Se non sono state impostate condivisioni di file SMB sull&#8217;istanza, viene richiesto di configurare le condivisioni SMB durante l&#8217;installazione dei componenti di caching edge di BlueXP.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="abilita-il-caching-edge-bluexp-nel-tuo-ambiente-di-lavoro">Abilita il caching edge BlueXP nel tuo ambiente di lavoro</h3>
+<div class="paragraph">
+<p>L&#8217;installazione guidata illustra i passaggi per implementare l&#8217;istanza di BlueXP edge caching Management Server e l&#8217;istanza di BlueXP edge caching Core, come evidenziato di seguito.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install1.png" alt="Una schermata della pagina iniziale di installazione del caching edge BlueXP."></span></p>
+</div>
+<div class="olist arabic">
+<div class="title">Fasi</div>
+<ol class="arabic">
+<li>
+<p>Selezionare l&#8217;ambiente di lavoro in cui è stato implementato Cloud Volumes ONTAP.</p>
+</li>
+<li>
+<p>Nel pannello servizi, fare clic su <strong>Enable</strong> per il servizio <em>Edge caching</em>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install2.png" alt="Una schermata del pulsante Enable iniziale nell&#8217;ambiente di lavoro per abilitare il caching edge BlueXP."></span></p>
+</div>
+</li>
+<li>
+<p>Leggi la pagina Panoramica e fai clic su <strong>continua</strong>.</p>
+</li>
+<li>
+<p>Se non sono disponibili condivisioni SMB nell&#8217;istanza di Cloud Volumes ONTAP, viene richiesto di inserire i dettagli relativi al server SMB e alla condivisione SMB per creare la condivisione. Per ulteriori informazioni sulla configurazione SMB, vedere <a href="concept-before-you-begin-to-deploy-gfc.html#storage-platform-volumes" target="_blank" rel="noopener">"Piattaforma di storage"</a>.</p>
+<div class="paragraph">
+<p>Al termine, fare clic su <strong>continua</strong> per creare la condivisione SMB.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install3.png" alt="Una schermata che mostra le informazioni necessarie per creare una condivisione SMB, se non disponibile."></span></p>
+</div>
+</li>
+<li>
+<p>Nella pagina Global file cache Service, immettere il numero di istanze Global file cache Edge che si desidera implementare, quindi assicurarsi che il sistema soddisfi i requisiti per le regole di configurazione di rete e firewall, le impostazioni di Active Directory e le esclusioni antivirus. Vedere <a href="concept-before-you-begin-to-deploy-gfc.html#prerequisites">"Prerequisiti"</a> per ulteriori dettagli.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install4.png" alt="Una schermata che mostra i prerequisiti prima di implementare le istanze di BlueXP edge caching Management Server e Core."></span></p>
+</div>
+</li>
+<li>
+<p>Dopo aver verificato che i requisiti sono stati soddisfatti o che si dispone delle informazioni necessarie per soddisfare tali requisiti, fare clic su <strong>continua</strong>.</p>
+</li>
+<li>
+<p>Immettere le credenziali di amministratore da utilizzare per accedere alla VM di BlueXP edge caching Management Server e fare clic su <strong>Enable GFC Service</strong> (attiva servizio GFC). Per Azure e Google Cloud inserisci le credenziali come nome utente e password; per AWS seleziona la coppia di chiavi appropriata. Se si desidera, è possibile modificare il nome della macchina virtuale/istanza.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install5.png" alt="Una schermata che mostra le informazioni di configurazione necessarie per configurare il server di gestione del caching edge BlueXP."></span></p>
+</div>
+</li>
+<li>
+<p>Una volta implementato il servizio di gestione del caching edge BlueXP, fare clic su <strong>continua</strong>.</p>
+</li>
+<li>
+<p>Per BlueXP edge caching Core, immettere le credenziali dell&#8217;utente admin per accedere al dominio Active Directory e le credenziali dell&#8217;utente dell&#8217;account di servizio. Quindi fare clic su <strong>continua</strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;istanza principale di caching edge BlueXP deve essere implementata nello stesso dominio Active Directory dell&#8217;istanza di Cloud Volumes ONTAP.</p>
+</li>
+<li>
+<p>L&#8217;account di servizio è un utente di dominio e fa parte del gruppo BUILTIN/Backup Operators sull&#8217;istanza di Cloud Volumes ONTAP.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install6.png" alt="Una schermata che mostra le informazioni di configurazione necessarie per impostare l&#8217;account di servizio e directory attiva di BlueXP edge caching Core."></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Immettere le credenziali di amministratore da utilizzare per accedere alla core VM BlueXP edge caching e fare clic su <strong>Deploy GFC Core</strong>. Per Azure e Google Cloud inserisci le credenziali come nome utente e password; per AWS seleziona la coppia di chiavi appropriata. Se si desidera, è possibile modificare il nome della macchina virtuale/istanza.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install7.png" alt="Una schermata che mostra le informazioni di configurazione necessarie per impostare l&#8217;istanza di BlueXP edge caching Core."></span></p>
+</div>
+</li>
+<li>
+<p>Una volta implementato il core di caching edge BlueXP, fare clic su <strong>Vai alla dashboard</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install8.png" alt="Una schermata che mostra la dashboard di caching edge di BlueXP al termine dell&#8217;installazione."></span></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>La dashboard mostra che l&#8217;istanza di Management Server e l&#8217;istanza di Core sono entrambe <strong>ON</strong> e funzionanti.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="concedere-in-licenza-linstallazione-di-bluexp-edge-caching">Concedere in licenza l&#8217;installazione di BlueXP edge caching</h3>
+<div class="paragraph">
+<p>Prima di poter utilizzare il caching edge BlueXP, è necessario configurare il servizio Server di gestione delle licenze (LMS) per il caching edge BlueXP su un&#8217;istanza Core per il caching edge BlueXP. Per attivare l&#8217;abbonamento, è necessario disporre delle credenziali NSS o di un ID cliente e di un numero di abbonamento forniti da NetApp.</p>
+</div>
+<div class="paragraph">
+<p>In questo esempio, configureremo il servizio LMS su un&#8217;istanza Core appena implementata nel cloud pubblico. Si tratta di un processo unico che consente di configurare il servizio LMS.</p>
+</div>
+<div class="olist arabic">
+<div class="title">Fasi</div>
+<ol class="arabic">
+<li>
+<p>Aprire la pagina Global file cache License Registration (registrazione licenza cache globale file) sul core di caching edge BlueXP (il core che si sta designando come servizio LMS) utilizzando il seguente URL. Sostituire <em>&lt;ip_address&gt;</em> con l&#8217;indirizzo IP del core di caching edge BlueXP:https://&lt;ip_address&gt;/lms/api/v1/config/lmsconfig.html[]</p>
+</li>
+<li>
+<p>Fare clic su <strong>"continua con questo sito Web (non consigliato)"</strong> per continuare. Viene visualizzata una pagina che consente di configurare l&#8217;LMS o di controllare le informazioni di licenza esistenti.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_license1.png" alt="Una schermata della pagina BlueXP edge caching License Registration."></span></p>
+</div>
+</li>
+<li>
+<p>Scegliere la modalità di registrazione:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>"NetApp LMS" viene utilizzato per i clienti che hanno acquistato licenze NetApp BlueXP edge caching Edge da NetApp o dai suoi partner certificati. (Preferito)</p>
+</li>
+<li>
+<p>"Legacy LMS" viene utilizzato per i clienti esistenti o in prova che hanno ricevuto un ID cliente tramite il supporto NetApp. (Questa opzione è stata obsoleta).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Per questo esempio, fare clic su <strong>NetApp LMS</strong>, inserire l&#8217;ID cliente (preferibilmente l&#8217;indirizzo e-mail) e fare clic su <strong>Registra LMS</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_license2.png" alt="Una schermata che mostra l&#8217;inserimento di un ID cliente LMS on-premise nella pagina BlueXP edge caching License Registration."></span></p>
+</div>
+</li>
+<li>
+<p>Controlla l&#8217;e-mail di conferma di NetApp che include il numero di abbonamento al software GFC e il numero di serie.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_license_email.png" alt="Una schermata dell&#8217;e-mail di NetApp contenente il numero di abbonamento al software GFC."></span></p>
+</div>
+</li>
+<li>
+<p>Fare clic sulla scheda <strong>NetApp LMS Settings</strong> (Impostazioni LMS NetApp).</p>
+</li>
+<li>
+<p>Selezionare <strong>GFC License Subscription</strong>, inserire il numero di abbonamento al software GFC e fare clic su <strong>Submit</strong> (Invia).</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_license_subscription.png" alt="Una schermata che mostra l&#8217;inserimento del numero di abbonamento al software GFC nella pagina GFC License Subscription (abbonamento alle licenze GFC)."></span></p>
+</div>
+<div class="paragraph">
+<p>Viene visualizzato un messaggio che indica che l&#8217;abbonamento di licenza GFC è stato registrato e attivato correttamente per l&#8217;istanza LMS. Eventuali acquisti successivi verranno aggiunti automaticamente all&#8217;abbonamento di licenza GFC.</p>
+</div>
+</li>
+<li>
+<p>In alternativa, è possibile fare clic sulla scheda <strong>License Information</strong> (informazioni licenza) per visualizzare tutte le informazioni sulla licenza GFC.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Quali sono le prossime novità?</div>
+<p>Se si è stabilito che è necessario implementare più core di caching edge BlueXP per supportare la configurazione, fare clic su <strong>Add Core Instance</strong> (Aggiungi istanza principale) dal dashboard e seguire la procedura guidata di distribuzione.</p>
+</div>
+<div class="paragraph">
+<p>Una volta completata l&#8217;implementazione Core, è necessario <a href="download-gfc-resources.html" target="_blank" rel="noopener">"Implementare le istanze di BlueXP edge caching Edge"</a> in ogni sede remota.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="implementare-istanze-core-aggiuntive">Implementare istanze core aggiuntive</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Se la configurazione richiede l&#8217;installazione di più di un core di caching edge BlueXP a causa di un elevato numero di istanze Edge, è possibile aggiungere un altro core all&#8217;ambiente di lavoro.</p>
+</div>
+<div class="paragraph">
+<p>Durante l&#8217;implementazione delle istanze Edge, alcune verranno configurate per la connessione al primo core e altre al secondo core. Entrambe le istanze principali accedono allo stesso storage back-end (l&#8217;istanza di Cloud Volumes ONTAP) nell&#8217;ambiente di lavoro.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Dalla dashboard Global file cache, fare clic su <strong>Add Core Instance</strong> (Aggiungi istanza principale).</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_add_another_core.png" alt="Una schermata della dashboard GFC e il pulsante per aggiungere un&#8217;istanza Core aggiuntiva."></span></p>
+</div>
+</li>
+<li>
+<p>Immettere le credenziali dell&#8217;utente amministratore per accedere al dominio Active Directory e le credenziali dell&#8217;utente dell&#8217;account di servizio. Quindi fare clic su <strong>continua</strong>.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;istanza principale di caching edge BlueXP deve trovarsi nello stesso dominio Active Directory dell&#8217;istanza di Cloud Volumes ONTAP.</p>
+</li>
+<li>
+<p>L&#8217;account di servizio è un utente di dominio e fa parte del gruppo BUILTIN/Backup Operators sull&#8217;istanza di Cloud Volumes ONTAP.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install6.png" alt="Una schermata che mostra le informazioni di configurazione necessarie per impostare l&#8217;account di servizio e directory attiva di BlueXP edge caching Core."></span></p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Immettere le credenziali di amministratore da utilizzare per accedere alla core VM BlueXP edge caching e fare clic su <strong>Deploy GFC Core</strong>. Per Azure e Google Cloud inserisci le credenziali come nome utente e password; per AWS seleziona la coppia di chiavi appropriata. Se si desidera, è possibile modificare il nome della macchina virtuale.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_install7.png" alt="Una schermata che mostra le informazioni di configurazione necessarie per impostare l&#8217;istanza di BlueXP edge caching Core."></span></p>
+</div>
+</li>
+<li>
+<p>Una volta implementato il core di caching edge BlueXP, fare clic su <strong>Vai alla dashboard</strong>.</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/screenshot_gfc_dashboard_2cores.png" alt="Una schermata che mostra la dashboard di caching edge di BlueXP al termine dell&#8217;installazione."></span></p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>La dashboard riflette la seconda istanza Core per l&#8217;ambiente di lavoro.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/it-it/bluexp-edge-caching/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/it-it/bluexp-edge-caching/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">In questa pagina</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">Condizioni per l'utilizzo</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">Direttiva sulla privacy</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Direttiva sui cookie</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Impostazioni cookie</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">Invia feedback su questa pagina</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/it-it/bluexp-edge-caching/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/it-it/bluexp-edge-caching/js/prism.js'></script>
+      <script type="text/javascript" src='/it-it/bluexp-edge-caching/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/it-it/bluexp-edge-caching/js/ie-tabbed-blocks.js'></script>
+    <script src='/it-it/bluexp-edge-caching/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
