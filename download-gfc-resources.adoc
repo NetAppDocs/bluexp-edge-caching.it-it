@@ -34,7 +34,7 @@ https://repo.cloudsync.netapp.com/gfc/2k19_GFC_2_3_0_55IMAGE.zip["Windows Server
 
 * Software BlueXP Edge Caching Edge:
 +
-https://repo.cloudsync.netapp.com/gfc/GFC-2-3-0-55-Release.exe["Pacchetto di installazione del software NetApp GFC (.EXE)"^]
+https://repo.cloudsync.netapp.com/gfc/GFC-2-4-1-72-Release.exe["Pacchetto di installazione del software NetApp GFC (.EXE)"^]
 
 * Dashboard Global file cache per Cloud Insights:
 +
