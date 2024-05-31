@@ -59,26 +59,7 @@ image:diagram_gfc_image2.png["Un diagramma che mostra i dettagli di un'implement
 
 == Piattaforme di storage supportate
 
-Le piattaforme di storage supportate per il caching edge BlueXP variano a seconda dell'opzione di implementazione selezionata.
-
-
-
-=== Opzioni di implementazione automatizzate
-
-Il caching edge BlueXP è supportato con i seguenti tipi di ambienti di lavoro se implementato con BlueXP:
-
-* Cloud Volumes ONTAP in Azure
-* Cloud Volumes ONTAP in AWS
-* Cloud Volumes ONTAP in Google Cloud
-
-
-Questa configurazione consente di implementare e gestire l'intera implementazione BlueXP edge caching lato server, incluso BlueXP edge caching Management Server e BlueXP edge caching Core, da BlueXP.
-
-
-
-=== Opzioni di implementazione manuale
-
-Le configurazioni di edge caching BlueXP sono supportate anche con Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSX per sistemi ONTAP e Cloud Volumes Service su Google Cloud. Le soluzioni on-premise sono disponibili anche sulle piattaforme NetApp AFF e FAS. In queste installazioni, i componenti di BlueXP edge caching lato server devono essere configurati e implementati manualmente, non utilizzando BlueXP.
+Le configurazioni cloud di caching edge di BlueXP sono supportate con sistemi Cloud Volumes ONTAP, Azure NetApp Files, Amazon FSX per ONTAP e Cloud Volumes Service su Google Cloud. Le soluzioni on-premise sono disponibili anche sulle piattaforme NetApp AFF e FAS. In entrambi i tipi di configurazioni, i componenti lato server per il caching edge di BlueXP sono configurati e implementati manualmente, non utilizzando BlueXP.
 
 Vedere https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%202.3.0%20User%20Guide.pdf["Guida utente di NetApp Global file cache"^] per ulteriori informazioni.
 
@@ -146,13 +127,13 @@ In Google Cloud, questo viene eseguito su un'istanza n2-standard-8 o equivalente
 
 
 
-* Quando viene installato con Cloud Volumes ONTAP (le configurazioni supportate sono implementate completamente tramite BlueXP), sono disponibili due opzioni di prezzo:
+* Se installato con Cloud Volumes ONTAP, esistono due opzioni di prezzo:
 +
 ** Per i sistemi Cloud Volumes ONTAP, è possibile pagare 3,000 dollari per ogni istanza edge caching di BlueXP, all'anno.
 ** In alternativa, per i sistemi Cloud Volumes ONTAP in Azure e GCP, è possibile scegliere il pacchetto Cloud Volumes ONTAP cache edge. Questa licenza basata sulla capacità consente di implementare una singola istanza di BlueXP edge caching Edge Edge per ogni 3 TIB di capacità acquistata. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html#capacity-based-licensing["Scopri di più qui"^].
 
 
-* Se installato utilizzando le opzioni di implementazione manuale, il prezzo è diverso. Per una stima dei costi di alto livello, vedere https://bluexp.netapp.com/global-file-cache/roi["Calcola il tuo potenziale di risparmio"^] In alternativa, rivolgiti al tuo NetApp Solutions Engineer per discutere delle opzioni migliori per l'implementazione aziendale.
+* Se installato su altre piattaforme (non su sistemi Cloud Volumes ONTAP), il prezzo è diverso. Per una stima dei costi di alto livello, vedere https://bluexp.netapp.com/global-file-cache/roi["Calcola il tuo potenziale di risparmio"^] In alternativa, rivolgiti al tuo NetApp Solutions Engineer per discutere delle opzioni migliori per l'implementazione aziendale.
 
 
 

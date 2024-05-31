@@ -22,7 +22,9 @@ Scopri le novità del caching edge BlueXP.
 
 NetApp ha annunciato la fine della disponibilità (EOA) di NetApp Global file cache al 31 maggio 2024. La fine del ciclo di vita interessa tutti i prodotti NetApp Global file cache, incluse le sottoscrizioni software Global file cache standalone e le soluzioni in bundle Global file cache con NetApp Cloud Volumes ONTAP, note come NetApp Cloud Volumes Edge cache.
 
-Sebbene annunciamo la fine del ciclo di vita di questi prodotti, NetApp continuerà a supportarli fino al 31 maggio 2027. https://mysupport.netapp.com/info/communications/CPC-00578.html["Vedi i dettagli della fine della disponibilità di Global file cache di NetApp"^].
+NetApp continuerà a supportare questi prodotti per i clienti esistenti per un minimo di 3 anni. https://mysupport.netapp.com/info/communications/CPC-00578.html["Vedi i dettagli della fine della disponibilità di Global file cache di NetApp"^].
+
+Inoltre, è stata rimossa la possibilità di abilitare, implementare e gestire i componenti Global file cache dall'interfaccia utente BlueXP.
 
 
 
